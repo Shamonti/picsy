@@ -1,0 +1,14 @@
+{
+  "name": "picsy",
+  "version": "1.0.0",
+  "description": "Landing Page for picsy",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "echo sass/style.scss css/style.css"
+  },
+  "author": "Shamonti",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
