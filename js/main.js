@@ -1,9 +1,10 @@
 // ========= Navbar changes color on scroll =============
-// $(window).scroll(function(){
-//   var scroll = $(window).scrollTop();
-//   if(scroll < 50){
-//       $('.fixed-top').css('background', 'transparent');
-//   } else{
-//       $('.fixed-top').css('background', 'rgba(205,159,250)');
-//   }
-// });
+$(function () {
+  $(window).on('scroll', function () {
+      if ( $(window).scrollTop() > 10 ) {
+          $('.navbar').addClass('scroll');
+      } else {
+          $('.navbar').removeClass('scroll');
+      }
+  });
+});
