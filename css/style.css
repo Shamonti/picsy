@@ -24,6 +24,13 @@ body {
   color: #5f7285;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #5f7285;
+}
+
 .card {
   -webkit-transition: all .8s ease-out;
   transition: all .8s ease-out;
@@ -39,10 +46,6 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #090d36;
-}
-
-.card-text {
-  color: #5f7285;
 }
 
 .card-rating img {
