@@ -9,5 +9,13 @@ $(function () {
   });
 });
 
-
+// ========smooth scroll==============
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 600
+  });
+  
+  $(".navbar-nav .nav-link").on("click", function(){
+    $(".navbar-nav").find(".active").removeClass("active");
+    $(this).addClass("active");
+  });
   
