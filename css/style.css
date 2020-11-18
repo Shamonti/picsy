@@ -337,8 +337,8 @@ a:hover {
     font-size: 1rem;
   }
   .carousel .btn {
-    width: 48%;
-    margin-right: 6px;
+    width: 50%;
+    margin: 6px;
   }
   .title-text {
     font-weight: 700;
@@ -479,6 +479,9 @@ button:focus {
 
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
+  .logo {
+    height: 6.5rem;
+  }
   .nav-link {
     color: #090d36 !important;
     padding: 2rem !important;
