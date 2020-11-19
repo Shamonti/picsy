@@ -753,8 +753,11 @@ button:focus {
   font-size: 1.6rem;
 }
 
+.login-logo {
+  height: 24rem;
+}
+
 .login-main-text {
-  margin-top: 25%;
   padding: 6rem;
   color: #FFFFFF;
 }
