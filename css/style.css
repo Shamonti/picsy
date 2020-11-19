@@ -210,9 +210,32 @@ a:hover {
   font-size: 1.6rem;
 }
 
+#contact .section-title h2 {
+  font-size: 5rem;
+  color: #090d36;
+}
+
+#contact .section-details {
+  font-size: 1.6rem;
+}
+
+#contact .section-details i {
+  font-size: 2.5rem;
+  color: #CD9FFA;
+}
+
 .section-contact .form-control {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+.login-form .section-title {
+  color: #090d36;
+}
+
+.login-form .section-title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -675,20 +698,6 @@ button:focus {
   color: #FFFFFF;
 }
 
-#contact .section-title h2 {
-  font-size: 5rem;
-  color: #090d36;
-}
-
-#contact .section-details {
-  font-size: 1.6rem;
-}
-
-#contact .section-details i {
-  font-size: 2.5rem;
-  color: #CD9FFA;
-}
-
 .footer {
   font-size: 1.6rem;
   background-color: #090d36 !important;
@@ -733,6 +742,13 @@ button:focus {
   padding: 0px 10px;
 }
 
+.main .bottom-line {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 10px;
+}
+
 .login-form .form-group {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -750,6 +766,10 @@ button:focus {
 
 .login-form input {
   height: 4rem;
+  font-size: 1.6rem;
+}
+
+.login-form label {
   font-size: 1.6rem;
 }
 
@@ -780,10 +800,10 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .main {
-    margin-left: 40%;
+    margin-left: 46%;
   }
   .sidenav {
-    width: 40%;
+    width: 48%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -797,5 +817,19 @@ button:focus {
 
 #signup {
   margin-top: 25%;
+}
+
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .main .bottom-line {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*Tablets*/
+  .main .bottom-line {
+    margin-top: 25%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
