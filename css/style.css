@@ -250,7 +250,8 @@ a:hover {
 
 .btn--login {
   width: 80%;
-  background-color: #017AFF;
+  background: -webkit-gradient(linear, left top, right top, from(#7B61FF), to(#CD9FFA));
+  background: linear-gradient(to right, #7B61FF, #CD9FFA);
   margin-left: 10%;
   margin-top: 5%;
   color: #FFFFFF;
@@ -262,14 +263,19 @@ a:hover {
 
 .btn--google {
   width: 80%;
-  background-color: #EB4235;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(95, 114, 133, 0.4);
   margin-left: 10%;
   margin-top: 5%;
-  color: #FFFFFF;
+  color: #5f7285;
 }
 
 .btn--google:hover {
-  color: #FFFFFF;
+  color: #090d36;
+}
+
+.google-icon {
+  height: 1.8rem;
 }
 
 .section-products .card {
