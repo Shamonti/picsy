@@ -133,6 +133,33 @@ a:hover {
   color: #FFFFFF;
 }
 
+.title-text {
+  font-weight: 700;
+  font-size: 5rem;
+  color: #FFFFFF;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.title-text--gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#CD9FFA), to(#7B61FF));
+  background: linear-gradient(to right, #CD9FFA, #7B61FF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.desc-text {
+  font-size: 2rem;
+  padding: .2rem .5rem;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-animation: moveInRight 1s ease-out;
+          animation: moveInRight 1s ease-out;
+}
+
 .heading-primary {
   margin-bottom: 6rem;
 }
@@ -221,6 +248,30 @@ a:hover {
           box-shadow: none;
 }
 
+.btn--login {
+  width: 80%;
+  background-color: #017AFF;
+  margin-left: 10%;
+  margin-top: 5%;
+  color: #FFFFFF;
+}
+
+.btn--login:hover {
+  color: #FFFFFF;
+}
+
+.btn--google {
+  width: 80%;
+  background-color: #EB4235;
+  margin-left: 10%;
+  margin-top: 5%;
+  color: #FFFFFF;
+}
+
+.btn--google:hover {
+  color: #FFFFFF;
+}
+
 .section-products .card {
   -webkit-transition: all .8s ease-out;
   transition: all .8s ease-out;
@@ -292,26 +343,6 @@ a:hover {
   font-size: 2.5rem;
 }
 
-.title-text {
-  font-weight: 700;
-  font-size: 5rem;
-  color: #FFFFFF;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-}
-
-.desc-text {
-  font-size: 2rem;
-  padding: .2rem .5rem;
-  color: rgba(255, 255, 255, 0.9);
-  -webkit-animation: moveInRight 1s ease-out;
-          animation: moveInRight 1s ease-out;
-}
-
 .mdi-36px {
   font-size: 3.9rem;
   margin-right: 1rem;
@@ -343,7 +374,6 @@ a:hover {
   .title-text {
     font-weight: 700;
     font-size: 4rem;
-    color: #FFFFFF;
   }
 }
 
@@ -681,5 +711,82 @@ button:focus {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  padding: 0px 10px;
+}
+
+.login-form .form-group {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-form .form-control {
+  border-radius: 3rem;
+}
+
+.login-form .form-control:focus {
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(123, 97, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(123, 97, 255, 0.25);
+}
+
+.login-form input {
+  height: 4rem;
+  font-size: 1.6rem;
+}
+
+.login-main-text {
+  margin-top: 25%;
+  padding: 6rem;
+  color: #FFFFFF;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login-form {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .register-form {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin-left: 40%;
+  }
+  .sidenav {
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  .login-form {
+    margin-top: 45%;
+    font-size: 1.6rem;
+  }
+}
+
+#signup {
+  margin-top: 25%;
 }
 /*# sourceMappingURL=style.css.map */
