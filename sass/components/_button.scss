@@ -74,12 +74,12 @@
     background-color: $color-primary;
     color: $color-white;
     border-bottom: 1px solid $color-white;
-    box-shadow: 0 3rem 2rem rgba($color-black, .25);
+    box-shadow: 0 3rem 2rem rgba($color-black, .15);
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 3rem 2rem rgba($color-black, .25);
+    box-shadow: 0 3rem 2rem rgba($color-black, .15);
     transform: translateY(0);
   }
 }
