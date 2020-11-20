@@ -351,6 +351,34 @@ a:hover {
   color: #090d36;
 }
 
+.btn-txt:link, .btn-txt:visited {
+  color: #090d36;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #090d36;
+  padding: 3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-txt:hover {
+  background-color: #A17DFD;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.btn-txt:active {
+  -webkit-box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .google-icon {
   height: 1.8rem;
 }

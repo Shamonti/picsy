@@ -58,6 +58,32 @@
   }
 }
 
+.btn-txt {
+  &:link,
+  &:visited {
+    color: $color-text;
+    display: inline-block;
+    font-weight: 600;
+    font-size: $default-font-size;
+    border-bottom: 1px solid $color-text;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+    box-shadow: 0 3rem 2rem rgba($color-black, .25);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 3rem 2rem rgba($color-black, .25);
+    transform: translateY(0);
+  }
+}
+
 .google-icon {
   height: 1.8rem;
 }
