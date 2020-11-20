@@ -92,6 +92,60 @@
   }
 }
 
+@-webkit-keyframes waitAnimate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  9.375% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  18.75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  28.125% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes waitAnimate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  9.375% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  18.75% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  28.125% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  37.5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -736,6 +790,13 @@ button:focus {
   background-position: center;
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+.login-logo--animation {
+  -webkit-animation: waitAnimate 8s linear infinite;
+          animation: waitAnimate 8s linear infinite;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .main {
