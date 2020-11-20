@@ -1,6 +1,134 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  line-height: 1.3;
-  color: $color-primary-dark;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: $color-grey-dark;
+}
+
+a {
+  text-decoration: none !important;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.title-text {
+  font-weight: 700;
+  font-size: 5rem;
+  color: $color-white;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  &--gradient {
+    background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.desc-text {
+  font-size: 2rem;
+  padding: .2rem .5rem;
+  color: rgba($color-white, .9);
+
+  animation: moveInRight 1s ease-out;
+}
+
+.heading-primary {
+    margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 3.5;
+    color: $color-text;
+    text-transform: uppercase;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75;
+    color: $color-grey-dark;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .heading-primary {
+
+    &--main {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 3.5;
+    }
+
+    &--sub {
+      font-size: 1.7rem;
+    }
+  }
+
+}
+
+.features {
+  &-number {
+    font-weight: 400;
+    font-size: 4.5rem;
+    color: $color-primary-dark;
+    margin-bottom: 2.5rem;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: $color-text;
+  }
+
+  &-text {
+    font-size: $default-font-size;
+  }
+}
+
+
+#contact .section {
+  &-title h2{
+    font-size: 5rem;
+    color: $color-text;
+  }
+
+  &-details {
+    font-size: $default-font-size;
+
+    i {
+      font-size: 2.5rem;
+      color: $color-primary-light;
+    }
+  }
+}
+
+.section-contact .form-control {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.login-form .section-title {
+  color: $color-text;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
 }

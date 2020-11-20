@@ -1,17 +1,19 @@
-.card {
-  transition: all .5s ease;
+.section-products .card {
+  transition: all .8s ease-out;
+  box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
 
   &-img-top {
     height: 20rem;
   }
+
   &-title {
     font-size: 2rem;
     font-weight: bold;
-    color: $color-black;
+    color: $color-text;
   }
+
   &-text {
-    font-size: 1.6rem;
-    color: $color-black;
+    font-size: $default-font-size;
   }
 
   &-rating img{
@@ -20,15 +22,17 @@
   }
 
   &-price {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 500;
     color: $color-black;
 
     s {
+      font-size: $default-font-size;
       color: $color-primary-dark;
     }
   }
 
   &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+    transform: translateY(-1rem) scale(1.03);
   }
 }

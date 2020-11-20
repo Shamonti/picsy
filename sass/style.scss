@@ -4,10 +4,14 @@
 @import "base/base";
 @import "base/typography";
 
+@import "components/button";
 @import "components/card";
+@import "components/carousel";
+@import "components/slider";
 
 @import "layout/header";
 
 
 @import "pages/home";
+@import "pages/login";
 

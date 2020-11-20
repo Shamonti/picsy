@@ -1,10 +1,82 @@
-.section-about {
-  background-image: url(../img/banner.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
+.section-products {
+  padding: 10rem 0;
+  background-color: $color-grey-light;
 }
 
-.section-products {
-  padding: 10rem 10rem;
+.section-features {
+  padding: 10rem 0;
+}
+
+.section-contact {
+  padding: 10rem 0;
+}
+
+.contact-info .fa {
+  padding-right: 5px;
+}
+
+#contact .form-control {
+  border: none;
+  border-bottom: 2px solid $color-grey-light;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#contact .form-control:focus {
+  border-bottom-color: #999999;
+}
+
+#contact input {
+  height: 5.5rem;
+}
+
+#contact button#submit {
+  background: $color-text;
+  border: none;
+  border-radius: 5rem;
+  color: $color-white;
+  height: 4rem;
+  margin-top: 2.4rem;
+  width: 14rem;
+}
+
+#contact button#submit:hover {
+  background: $color-primary-dark;
+  color: $color-white;
+}
+
+
+.footer {
+  font-size: $default-font-size;
+  background-color: $color-text !important;
+  color: $color-white;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.footer .bottom-line ul li {
+  display: inline;
+  padding: 15px;
+}
+
+.footer .line {
+  background-color: white !important;
+  width: 100%;
+}
+
+.footer .social-media a {
+  padding: 7px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
 }

@@ -1,0 +1,63 @@
+.btn {
+  &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black,.4);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+  
+  }
+
+  &:active,
+  &:focus {
+      outline: none;
+      transform: translateY(0);
+      box-shadow: none;
+  }
+
+  &--login {
+    width: 80%;
+    background: linear-gradient(to right, $color-primary-dark, $color-primary-light);
+    margin-left: 10%;
+    margin-top: 5%;
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &--google {
+    width: 80%;
+    background-color: $color-white;
+    border: 1px solid rgba($color-grey-dark, .4) ;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: $color-grey-dark;
+    
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+.google-icon {
+  height: 1.8rem;
+}

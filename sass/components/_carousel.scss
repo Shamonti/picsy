@@ -1,0 +1,73 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-caption {
+  bottom: 30% !important;
+  right: 0 !important;
+  top: 35%;
+  text-align: left !important;
+  font-size: 2.5rem;
+}
+
+
+
+// BUTTONS
+.mdi-36px {
+  font-size: 3.9rem;
+  margin-right: 1rem;
+}
+
+.carousel .btn {
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: $color-white;
+  background-color: $color-primary-dark;
+  border-radius: 4px;
+  width: 30%;
+
+  animation: moveInBottom 1s ease-out;
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .carousel-caption {
+    width: 85%;
+    left: 9%;
+    top: 22%;
+    font-size: 1rem;
+  }
+
+  .carousel .btn {
+    width: 55%;
+    margin: 6px;
+  }
+
+  .title-text {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+  .carousel-caption {
+    width: 78%;
+  }
+}
