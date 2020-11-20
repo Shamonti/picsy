@@ -829,6 +829,7 @@ button:focus {
 
 .main {
   padding: 0px 10px;
+  position: relative;
 }
 
 .main .bottom-line {
@@ -879,7 +880,7 @@ button:focus {
 
 @media screen and (max-width: 450px) {
   .login-form {
-    margin-top: 10%;
+    margin-top: 14%;
     margin-bottom: 5%;
   }
   .register-form {
@@ -910,8 +911,16 @@ button:focus {
 
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
+  .main {
+    position: relative;
+  }
   .main .bottom-line {
     margin-top: 10%;
+  }
+  .btn-position {
+    position: absolute;
+    right: 2rem !important;
+    top: 1rem !important;
   }
 }
 
@@ -920,5 +929,11 @@ button:focus {
   .main .bottom-line {
     margin-top: 25%;
   }
+}
+
+.btn-position {
+  position: absolute;
+  right: -7rem;
+  top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
