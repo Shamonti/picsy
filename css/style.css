@@ -383,6 +383,18 @@ a:hover {
   height: 1.8rem;
 }
 
+.btn-position {
+  position: absolute;
+  right: -7rem;
+  top: 1rem;
+}
+
+.btn-position--reg {
+  position: absolute;
+  right: 7rem;
+  top: 1rem;
+}
+
 .section-products .card {
   -webkit-transition: all .8s ease-out;
   transition: all .8s ease-out;
@@ -929,11 +941,5 @@ button:focus {
   .main .bottom-line {
     margin-top: 25%;
   }
-}
-
-.btn-position {
-  position: absolute;
-  right: -7rem;
-  top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
