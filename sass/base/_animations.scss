@@ -43,23 +43,23 @@
 }
 
   
-  @keyframes waitAnimate {
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg)
+        transform:  perspective(100px) rotate(0deg)
       }
-      9.375% {
-        transform: rotate(90deg);
+      9% {
+        transform:  perspective(100px) rotate(90deg);
       }
-      18.75% {
-        transform: rotate(180deg);
+      18% {
+        transform:  perspective(100px)rotate(180deg);
       }
-      28.125% {
-        transform: rotate(270deg);
+      28% {
+        transform:  perspective(100px)rotate(270deg);
       }
-      37.5% {
-        transform: rotate(360deg);
+      37% {
+        transform:  perspective(100px)rotate(360deg);
       }
       100% {
-        transform: rotate(360deg);
+        transform:  perspective(100px)rotate(360deg);
       }
   }
