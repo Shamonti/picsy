@@ -1,9 +1,3 @@
-// .my-nav{
-//   position: absolute;
-//   z-index: 10;
-//   width: 100%;
-//   }
-
 .navbar {
   font-size: 1.8rem;
   transition: all 0.4s;
@@ -11,10 +5,14 @@
 }
 
 .nav-link {
-  color: $color-white !important;
+  color: $color-text !important;
   font-weight: 700;
   padding: 0 2.2rem !important;
   position: relative;
+}
+
+.nav-icon {
+  color: $color-text;
 }
 
 nav .navbar-nav .nav-link:hover::after {
@@ -24,11 +22,15 @@ nav .navbar-nav .nav-link:hover::after {
   left: 12%;
   height: 2px;
 	width: 75%;
-  background: $color-white !important;
+  background: $color-text !important;
 }
 
 nav .navbar-nav .nav-link:hover{
-	color: $color-white !important;
+	color: $color-text !important;
+}
+
+nav .navbar-nav .nav-icon:hover{
+	color: $color-text !important;
 }
 
 button:focus {
@@ -46,13 +48,17 @@ button:focus {
   color: $color-text !important;
 }
 
+.navbar.scroll .nav-icon{
+  color: $color-text !important;
+}
+
 .navbar.scroll .nav-link:hover,
 .navbar.scroll .nav-link:focus {
   color: $color-text !important;
   text-decoration: none;
 }
 
-.navbar.scroll .nav-link:hover::after {
+#nav--1 .navbar.scroll .nav-link:hover::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -75,11 +81,11 @@ button:focus {
 
 .fixed-top {
   position: fixed !important;
-  z-index: 1030 !important;
+  z-index: 10 !important;
 }
 
 .bg-default {
-  background-color: transparent;
+  background-color: $color-white;
 }
 
 .fa-bars {
@@ -215,3 +221,46 @@ button:focus {
 }
 
 }
+
+// Second navbar
+#nav--2 {
+  margin-top: 105px;
+  border-top: 1px solid $color-grey-dark;
+}
+
+#nav--2 .nav-link {
+  font-size: $default-font-size;
+  transition: all .2s ease-in-out;
+}
+
+#nav--2 .nav-link:hover {
+  background-color: rgba($color-primary-light, .15);
+  border-radius: 30px;
+
+  transform: scale(1.05);
+}
+
+#nav--2 .navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  height: 0px;
+	width: 75%;
+  background: $color-text !important;
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  #nav--2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+  #nav--2 {
+    display: none;
+  }
+}
+
