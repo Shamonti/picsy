@@ -26,19 +26,19 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 50,
     waitUntilVisible: true,
     loop: true,
-    loopDelay: 3000
+    loopDelay: 5000
   }).go();
   new TypeIt("#type-effect--2", {
     strings: "The Right Time To Show Your Work Worldwide",
     speed: 50,
     waitUntilVisible: true,
     loop: true,
-    loopDelay: 3000
+    loopDelay: 5000
   }).go();
   new TypeIt("#type-effect--3", {
     strings: "The Right Time To Show Your Work Worldwide",
     speed: 50,
     waitUntilVisible: true,
     loop: true,
-    loopDelay: 3000
+    loopDelay: 5000
   }).go();
