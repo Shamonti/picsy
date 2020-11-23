@@ -23,21 +23,21 @@ const scroll = new SmoothScroll('a[href*="#"]', {
   // ========type animation==============
   new TypeIt("#type-effect--1", {
     strings: "The Right Time To Show Your Work Worldwide",
-    speed: 50,
+    speed: 60,
     waitUntilVisible: true,
     loop: true,
     loopDelay: 5000
   }).go();
   new TypeIt("#type-effect--2", {
     strings: "The Right Time To Show Your Work Worldwide",
-    speed: 50,
+    speed: 60,
     waitUntilVisible: true,
     loop: true,
     loopDelay: 5000
   }).go();
   new TypeIt("#type-effect--3", {
     strings: "The Right Time To Show Your Work Worldwide",
-    speed: 50,
+    speed: 60,
     waitUntilVisible: true,
     loop: true,
     loopDelay: 5000

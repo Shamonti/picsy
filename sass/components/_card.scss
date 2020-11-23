@@ -4,6 +4,8 @@
 
   &-img-top {
     height: 20rem;
+
+    position: relative;
   }
 
   &-title {
@@ -28,11 +30,42 @@
 
     s {
       font-size: $default-font-size;
-      color: $color-primary-dark;
+      color: $color-red;
     }
   }
 
   &:hover {
     transform: translateY(-1rem) scale(1.03);
+
+    .cart-btn {
+      font-weight: 600;
+      color: $color-text;
+      border: 1px solid $color-text;
+      display: block;
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      background-color: $color-grey-light;
+    }
   }
 }
+
+.wishlist-btn {
+  color: $color-text;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  &:hover {
+    background-color: $color-text;
+    color: $color-white;
+  }
+}
+
+.cart-btn {
+  font-weight: 600;
+  color: $color-text;
+  border: 1px solid $color-text;
+  display: none;
+}
+

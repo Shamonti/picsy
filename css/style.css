@@ -404,6 +404,7 @@ footer {
 
 .section-products .card-img-top {
   height: 20rem;
+  position: relative;
 }
 
 .section-products .card-title {
@@ -429,7 +430,7 @@ footer {
 
 .section-products .card-price s {
   font-size: 1.6rem;
-  color: #7B61FF;
+  color: #CF113F;
 }
 
 .section-products .card:hover {
@@ -437,10 +438,40 @@ footer {
           transform: translateY(-1rem) scale(1.03);
 }
 
+.section-products .card:hover .cart-btn {
+  font-weight: 600;
+  color: #090d36;
+  border: 1px solid #090d36;
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: #F7F8FB;
+}
+
+.wishlist-btn {
+  color: #090d36;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.wishlist-btn:hover {
+  background-color: #090d36;
+  color: #FFFFFF;
+}
+
+.cart-btn {
+  font-weight: 600;
+  color: #090d36;
+  border: 1px solid #090d36;
+  display: none;
+}
+
 .carousel-item {
   height: 80vh;
-  min-height: 350px;
-  margin-top: 150px;
+  min-height: 35rem;
+  margin-top: 15rem !important;
   background: no-repeat center center scroll;
   background-size: cover;
 }
