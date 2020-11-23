@@ -99,3 +99,22 @@
   right: 7rem;
   top: 1rem;
 }
+
+.wishlist-btn {
+  color: $color-text;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  &:hover {
+    background-color: $color-text;
+    color: $color-white;
+  }
+}
+
+.cart-btn {
+  font-weight: 600;
+  color: $color-text;
+  border: 1px solid $color-text;
+  display: none;
+}

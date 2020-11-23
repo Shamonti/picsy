@@ -1,7 +1,7 @@
 .carousel-item {
-  height: 80vh;
+  height: 90vh;
   min-height: 35rem;
-  margin-top: 15rem !important;
+  margin-top: 15rem;
   background: no-repeat center center scroll;
   background-size: cover;
 }
@@ -46,6 +46,11 @@
 
 @media only screen and (max-width: 575px){
   /*Mobile Phones*/
+  .carousel-item {
+    height: 100vh;
+    margin-top: 8rem;
+  }
+
   .carousel-caption {
     width: 85%;
     left: 9%;
@@ -54,7 +59,7 @@
   }
 
   .carousel .btn {
-    width: 55%;
+    width: 56%;
     margin: 6px;
   }
 
@@ -69,5 +74,7 @@
   .carousel-caption {
     width: 78%;
   }
-  
+  .carousel-item{
+    margin-top: 10rem;
+  }
 }

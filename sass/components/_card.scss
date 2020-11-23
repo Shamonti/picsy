@@ -1,41 +1,49 @@
 .section-products .card {
   transition: all .8s ease-out;
-  box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
+  border: none;
+  background-color: transparent;
+  border-radius: 1rem;
 
   &-img-top {
     height: 20rem;
+    border-radius: 1rem;
 
     position: relative;
   }
 
   &-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: $color-text;
+    text-align: left;
   }
 
   &-text {
     font-size: $default-font-size;
+    text-align: left;
   }
 
   &-rating img{
-    height: 3rem;
+    height: 1.6rem;
     padding: 0 0 10px 0;
   }
 
   &-price {
-    font-size: 1.8rem;
+    font-size: $default-font-size;
     font-weight: 500;
     color: $color-black;
+    text-align: left;
 
     s {
-      font-size: $default-font-size;
+      font-size: 1.4rem;
       color: $color-red;
     }
   }
 
   &:hover {
     transform: translateY(-1rem) scale(1.03);
+    
+  box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
 
     .cart-btn {
       font-weight: 600;
@@ -50,22 +58,6 @@
   }
 }
 
-.wishlist-btn {
-  color: $color-text;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-  &:hover {
-    background-color: $color-text;
-    color: $color-white;
-  }
+.section-products .swiper-slide {
+  text-align: left !important;
 }
-
-.cart-btn {
-  font-weight: 600;
-  color: $color-text;
-  border: 1px solid $color-text;
-  display: none;
-}
-
