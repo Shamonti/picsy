@@ -8,6 +8,7 @@ body {
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: $default-font-size;
   line-height: 2.5rem;
   color: $color-grey-dark;
 }
@@ -26,7 +27,6 @@ a {
   font-size: 5rem;
   color: $color-white;
 
-  
 
   &--gradient {
     background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
@@ -128,6 +128,15 @@ a {
   h2 {
     font-size: 2.4rem;
     font-weight: 700;
+  }
+}
+
+.section-product-details .product {
+  &-title{
+    color: $color-text;
+  }
+  &-desc{
+
   }
 }
 

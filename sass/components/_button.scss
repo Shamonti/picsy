@@ -102,6 +102,7 @@
 
 .wishlist-btn {
   color: $color-text;
+  background-color: $color-white;
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -117,4 +118,27 @@
   color: $color-text;
   border: 1px solid $color-text;
   display: none;
+}
+
+.delivery-btn {
+  display: none;
+
+  img{
+    height: 4rem;
+  }
+}
+
+.btn-search {
+  &,
+  &:link,
+  &:visited {
+      text-decoration: none;
+      display: inline-block;
+      background-color: transparent;
+      font-size: $default-font-size;
+
+      //Change for the <button> element
+      border: none;
+      cursor: pointer;
+  }
 }

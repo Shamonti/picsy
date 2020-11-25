@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BOOTSTRAP CSS -->
+    <!-- BOOTSTRAP CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!-- FONT -->
@@ -37,8 +37,18 @@
               
               <div id="navbarSupportedContent" class="collapse navbar-collapse">
                   <ul class="navbar-nav ml-auto">
+                      <li>
+                        <div class="input-group">
+                          <input type="hidden" name="search_param" value="all" id="search_param">         
+                          <input type="text" class="form-control" name="x" placeholder="Find anything art...">
+                          <span class="input-group-btn">
+                              <button class="btn-search" type="button"><i class="fas fa-search pr-2"></i></button>
+                          </span>
+                      </div>
+                      </li>
+
                       <li class="nav-item active scroll">
-                        <a href="#" class="nav-link text-uppercase font-weight-bold">Home</a>
+                        <a href="index.html" class="nav-link text-uppercase font-weight-bold">Home</a>
                       </li>
                       <li class="nav-item">
                         <a href="#" class="nav-link text-uppercase font-weight-bold">Buy Art</a>
@@ -77,29 +87,14 @@
                         <a class="nav-link" href="#">Drawing &amp; Illustration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Drawing & Illustration</a>
+                        <a class="nav-link" href="#">Sculptures</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Digital Art</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sculptures &amp; Carvings</a>
+                        <a class="nav-link" href="#">Carvings</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Ceramics &amp; Pottery</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Glass</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jewelry</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Textile &amp; Apparel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Crafts &amp; Other Art</a>
-                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -170,7 +165,7 @@
     </header>
 
     <main>
-      <section id="features" class="section-features">
+      <section id="features" class="section-features u-section-padding">
         <div class="container">
           <div class="row">
             <div class="col-md-12 heading-primary">
@@ -206,7 +201,7 @@
       </section>
 
       <!-- SLIDER -->
-    <div class="section-products">
+    <div class="section-products u-section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -214,10 +209,13 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
+                    </button>
+                    <button type="button" class="btn delivery-btn">
+                      <img src="img/free-delivery.svg" alt="free-delivery">
                     </button>
                     
                     <div class="card-body">
@@ -237,7 +235,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -245,6 +243,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -260,7 +261,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -268,6 +269,12 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -283,7 +290,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -291,6 +298,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -306,7 +316,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -314,6 +324,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -329,7 +342,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -337,6 +350,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -367,12 +383,42 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
                     </button>
                     
+                    <div class="card-body">
+                      <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
+
+                      <h4 class="card-title">Retro Canvas Prints</h4>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
+                      <span class="card-rating">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star_empty.svg" alt="">
+                      </span>
+                      <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card my-5 ml-3">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
+
+                    <button type="button" class="btn wishlist-btn">
+                      <i class="far fa-heart text-center"></i>
+                    </button>
+                    <button type="button" class="btn delivery-btn">
+                      <img src="img/free-delivery.svg" alt="free-delivery">
+                    </button>
+
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
@@ -390,7 +436,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -398,6 +444,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -413,14 +462,17 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
                     </button>
-                    
+
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -436,7 +488,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
@@ -444,6 +496,9 @@
                     
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -459,37 +514,17 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
+                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="flowers">
 
                     <button type="button" class="btn wishlist-btn">
                       <i class="far fa-heart text-center"></i>
                     </button>
-                    
-                    <div class="card-body">
-                      <button type="button" class="btn cart-btn">Buy Now</button>
-                      <h4 class="card-title">Retro Canvas Prints</h4>
-                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
-                      <span class="card-rating">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star.svg" alt="">
-                        <img src="img/star_empty.svg" alt="">
-                      </span>
-                      <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card my-5 ml-3">
-                    <img class="card-img-top img-fluid " src="img/card_img_1.jpg" alt="laughing-baby">
 
-                    <button type="button" class="btn wishlist-btn">
-                      <i class="far fa-heart text-center"></i>
-                    </button>
-                    
                     <div class="card-body">
                       <button type="button" class="btn cart-btn">Buy Now</button>
+                      <button type="button" class="btn delivery-btn">
+                        <img src="img/free-delivery.svg" alt="free-delivery">
+                      </button>
                       <h4 class="card-title">Retro Canvas Prints</h4>
                       <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque architecto id, fugiat maiores vitae.</p>
                       <span class="card-rating">
@@ -521,7 +556,7 @@
     </div>
 
 
-      <section id="contact" class="section-contact">
+      <section id="contact" class="section-contact u-section-padding">
         <div class="container">
           <div class="row">
             <div class="col-md-6"> 
@@ -675,8 +710,6 @@
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
     <!-- JavaScript -->
-    <!-- <script src="vendor/js/jquery-3.5.1.min.js"></script>
-    <script src="vendor/js/popper.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 

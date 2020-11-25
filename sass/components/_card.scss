@@ -43,7 +43,7 @@
   &:hover {
     transform: translateY(-1rem) scale(1.03);
     
-  box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
+    box-shadow: 0 1.5rem 1rem rgba($color-black, .15);
 
     .cart-btn {
       font-weight: 600;
@@ -52,7 +52,15 @@
       display: block;
       position: absolute;
       top: 20%;
-      left: 30%;
+      left: 33%;
+      background-color: $color-grey-light;
+    }
+    .delivery-btn {
+      
+      display: block;
+      position: absolute;
+      bottom: 55%;
+      left: 37%;
       background-color: $color-grey-light;
     }
   }
@@ -60,4 +68,16 @@
 
 .section-products .swiper-slide {
   text-align: left !important;
+}
+
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .section-products .card {
+    &:hover {  
+      .cart-btn {
+        left: 40%;
+      }
+    }
+  }
 }
