@@ -430,10 +430,12 @@ footer {
 
 .delivery-btn {
   display: none;
+  padding: 0;
 }
 
 .delivery-btn img {
   height: 4rem;
+  width: 6rem;
 }
 
 .btn-search, .btn-search:link, .btn-search:visited {
