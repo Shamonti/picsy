@@ -117,17 +117,7 @@
   font-weight: 600;
   color: $color-text;
   border: 1px solid $color-text;
-  display: none;
-}
-
-.delivery-btn {
-  display: none;
-  padding: 0;
-
-  img{
-    height: 4rem;
-    width: 6rem;
-  }
+  display: none !important;
 }
 
 .btn-search {

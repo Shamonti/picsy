@@ -1,4 +1,4 @@
-.section-products .card {
+.card {
   transition: all .8s ease-out;
   border: none;
   background-color: transparent;
@@ -49,18 +49,10 @@
       font-weight: 600;
       color: $color-text;
       border: 1px solid $color-text;
-      display: block;
+      display: block !important;
       position: absolute;
       top: 20%;
       left: 33%;
-      background-color: $color-grey-light;
-    }
-    .delivery-btn {
-      
-      display: block;
-      position: absolute;
-      bottom: 55%;
-      left: 37%;
       background-color: $color-grey-light;
     }
   }
@@ -73,7 +65,7 @@
 
 @media only screen and (max-width: 575px){
   /*Mobile Phones*/
-  .section-products .card {
+  .card {
     &:hover {  
       .cart-btn {
         left: 40%;

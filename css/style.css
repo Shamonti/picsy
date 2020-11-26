@@ -230,18 +230,6 @@ a:hover {
   color: #5f7285;
 }
 
-@media only screen and (max-width: 575px) {
-  /*Mobile Phones*/
-  .heading-primary--main {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 3.5;
-  }
-  .heading-primary--sub {
-    font-size: 1.7rem;
-  }
-}
-
 .features-number {
   font-weight: 400;
   font-size: 4.5rem;
@@ -289,6 +277,88 @@ a:hover {
 
 .section-product-details .product-title {
   color: #090d36;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section-product-details .product-review--star {
+  padding-right: 5px;
+}
+
+.section-product-details .product-review--star img {
+  height: 2.5rem;
+  padding: 0 0 10px 0;
+  margin-top: 6px;
+}
+
+.section-product-details .product-review--rating {
+  color: #090d36;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-right: 5px;
+}
+
+.section-product-details .product-review--num {
+  color: #7B61FF;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-left: 1px solid #7B61FF;
+  padding-left: 7px;
+}
+
+.section-product-details .product-price {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #090d36;
+  padding: 2rem 0 1rem 0;
+}
+
+.section-product-details .product-price s {
+  font-size: 1.6rem;
+  color: #CF113F;
+  margin: -1.3rem;
+}
+
+.section-product-details .product-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #090d36;
+}
+
+.section-product-details .product-desc {
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.card-delivery-text {
+  background-color: #55c57a;
+  width: 60%;
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  border-radius: 4px;
+  border: 3px solid #FFFFFF;
+}
+
+.card-delivery-text span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .heading-primary--main {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3.5;
+  }
+  .heading-primary--sub {
+    font-size: 1.7rem;
+  }
+  .card-delivery-text {
+    left: 9rem;
+  }
 }
 
 footer {
@@ -425,17 +495,7 @@ footer {
   font-weight: 600;
   color: #090d36;
   border: 1px solid #090d36;
-  display: none;
-}
-
-.delivery-btn {
-  display: none;
-  padding: 0;
-}
-
-.delivery-btn img {
-  height: 4rem;
-  width: 6rem;
+  display: none !important;
 }
 
 .btn-search, .btn-search:link, .btn-search:visited {
@@ -447,7 +507,7 @@ footer {
   cursor: pointer;
 }
 
-.section-products .card {
+.card {
   -webkit-transition: all .8s ease-out;
   transition: all .8s ease-out;
   border: none;
@@ -455,64 +515,56 @@ footer {
   border-radius: 1rem;
 }
 
-.section-products .card-img-top {
+.card-img-top {
   height: 20rem;
   border-radius: 1rem;
   position: relative;
 }
 
-.section-products .card-title {
+.card-title {
   font-size: 1.8rem;
   font-weight: bold;
   color: #090d36;
   text-align: left;
 }
 
-.section-products .card-text {
+.card-text {
   font-size: 1.6rem;
   text-align: left;
 }
 
-.section-products .card-rating img {
+.card-rating img {
   height: 1.6rem;
   padding: 0 0 10px 0;
 }
 
-.section-products .card-price {
+.card-price {
   font-size: 1.6rem;
   font-weight: 500;
   color: #000000;
   text-align: left;
 }
 
-.section-products .card-price s {
+.card-price s {
   font-size: 1.4rem;
   color: #CF113F;
 }
 
-.section-products .card:hover {
+.card:hover {
   -webkit-transform: translateY(-1rem) scale(1.03);
           transform: translateY(-1rem) scale(1.03);
   -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.section-products .card:hover .cart-btn {
+.card:hover .cart-btn {
   font-weight: 600;
   color: #090d36;
   border: 1px solid #090d36;
-  display: block;
+  display: block !important;
   position: absolute;
   top: 20%;
   left: 33%;
-  background-color: #F7F8FB;
-}
-
-.section-products .card:hover .delivery-btn {
-  display: block;
-  position: absolute;
-  bottom: 55%;
-  left: 37%;
   background-color: #F7F8FB;
 }
 
@@ -522,7 +574,7 @@ footer {
 
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
-  .section-products .card:hover .cart-btn {
+  .card:hover .cart-btn {
     left: 40%;
   }
 }
@@ -870,7 +922,8 @@ button:focus {
 
 #nav--2 {
   margin-top: 105px;
-  border-top: 1px solid #5f7285;
+  border-top: 1px solid #dfdfe1;
+  border-bottom: 1px solid #dfdfe1;
 }
 
 #nav--2 .navbar-nav {
@@ -936,7 +989,7 @@ button:focus {
 }
 
 #contact .form-control:focus {
-  border-bottom-color: #999999;
+  border-bottom-color: #5f7285;
 }
 
 #contact input {
@@ -1116,6 +1169,5 @@ button:focus {
 .section-product-image img {
   height: 60rem;
   width: 100%;
-  border-radius: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

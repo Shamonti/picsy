@@ -247,7 +247,8 @@ button:focus {
 // Second navbar
 #nav--2 {
   margin-top: 105px;
-  border-top: 1px solid $color-grey-dark;
+  border-top: 1px solid $color-grey;
+  border-bottom: 1px solid $color-grey;
 }
 
 #nav--2 .navbar-nav {

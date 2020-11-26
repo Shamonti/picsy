@@ -64,22 +64,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 575px){
-  /*Mobile Phones*/
-  .heading-primary {
 
-    &--main {
-      font-size: 4rem;
-      font-weight: 700;
-      letter-spacing: 3.5;
-    }
-
-    &--sub {
-      font-size: 1.7rem;
-    }
-  }
-
-}
 
 .features {
   &-number {
@@ -134,10 +119,97 @@ a {
 .section-product-details .product {
   &-title{
     color: $color-text;
+    font-size: 3rem;
+    font-weight: 700;
   }
-  &-desc{
+  &-review {
 
+    &--star {
+      padding-right: 5px;
+      img{
+        height: 2.5rem;
+        padding: 0 0 10px 0;
+        margin-top: 6px;
+      }
+
+    } 
+
+    &--rating {
+      color: $color-text;
+      font-size: $default-font-size;
+      font-weight: 500;
+      padding-right: 5px;
+    }
+
+    &--num {
+      color: $color-primary-dark;
+      font-size: $default-font-size;
+      font-weight: 500;
+      border-left: 1px solid $color-primary-dark;
+      padding-left: 7px;
+    }
   }
+
+  &-price {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: $color-text;
+    padding: 2rem 0 1rem 0;
+
+    s {
+      font-size: $default-font-size;
+      color: $color-red;
+      margin: -1.3rem;
+    }
+  }
+
+  &-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color-text;
+  }
+
+  &-desc {
+    font-size: $default-font-size;
+    color: $color-black;
+  }
+}
+
+.card-delivery-text {
+  background-color: $color-green;
+  width: 60%;
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  border-radius: 4px;
+  border: 3px solid $color-white;
+
+  span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: $color-white;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .heading-primary {
+
+    &--main {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 3.5;
+    }
+
+    &--sub {
+      font-size: 1.7rem;
+    }
+  }
+
+  .card-delivery-text {
+    left: 9rem;
+  }
+
 }
 
 footer {
