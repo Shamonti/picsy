@@ -342,6 +342,15 @@ a:hover {
   line-height: 3rem;
 }
 
+.policy-text {
+  color: #7B61FF;
+  text-decoration: underline !important;
+}
+
+.policy-text:hover {
+  color: #7B61FF;
+}
+
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
   .heading-primary--main {
