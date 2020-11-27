@@ -5,3 +5,18 @@
 .u-section-padding {
   padding: 10rem 0;
 }
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .u-margin-top-large {
+    margin-top: 6rem;
+  }
+  
+  .u-section-padding {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+}

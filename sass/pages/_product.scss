@@ -1,8 +1,82 @@
-.section-product-image {
+.section-product-details {
+  .product-image {
 
-  img{
-    height: 60rem;
-    width: 100%;
+    img{
+      height: 68rem;
+      width: 100%;
+    }
+    
+  }
+  .select-size {
+    color: $color-black;
   }
   
+  .product-number {
+    width: 28%;
+    display: inline-flex !important;
+  
+    .custom-select {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.section-product-ratings {
+  .ratings-block{
+    display: grid;
+    text-align: center;
+
+    .rating-txt {
+      color: $color-text;
+      font-size: 8rem;
+      font-weight: 500;
+      line-height: 10rem;
+    }
+  
+    .big-star img{
+      height: 4.5rem;
+    }
+    
+  }
+
+  
+  .progress {
+    margin-top: .6rem;
+  }
+  .progress-bar {
+    background-color: $color-primary-dark;
+  }
+}
+
+.section-product-comments {
+  background-color: $color-grey-light;
+}
+
+.swiper-pagination--2 {
+  position: relative;
+  top: .5rem;
+  font-size: $default-font-size;
+  color: $color-text;
+}
+
+.review-txt {
+  color: $color-text;
+  font-size: $default-font-size;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .section-product-image {
+
+    img{
+      height: 90vh;
+      width: 100%;
+    }
+    
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
 }

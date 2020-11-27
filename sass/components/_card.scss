@@ -5,7 +5,7 @@
   border-radius: 1rem;
 
   &-img-top {
-    height: 20rem;
+    height: 24rem;
     border-radius: 1rem;
 
     position: relative;
@@ -66,6 +66,10 @@
 @media only screen and (max-width: 575px){
   /*Mobile Phones*/
   .card {
+    &-img-top {
+      height: 34rem;
+    }
+
     &:hover {  
       .cart-btn {
         left: 40%;
