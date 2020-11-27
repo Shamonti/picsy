@@ -230,17 +230,24 @@ a:hover {
   color: #5f7285;
 }
 
+.heading-secondary {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #090d36;
+}
+
+.small-underline {
+  margin: .5rem auto;
+  width: 12%;
+  background-color: #090d36;
+  height: 1.5px;
+}
+
 .features-number {
   font-weight: 400;
   font-size: 4.5rem;
   color: #7B61FF;
   margin-bottom: 2.5rem;
-}
-
-.features-title {
-  font-weight: 600;
-  font-size: 2rem;
-  color: #090d36;
 }
 
 .features-text {
@@ -333,22 +340,6 @@ a:hover {
 .product-text--green {
   color: #247139;
   line-height: 3rem;
-}
-
-.card-delivery-text {
-  background-color: #55c57a;
-  width: 60%;
-  position: absolute;
-  top: 18rem;
-  left: 4.4rem;
-  border-radius: 4px;
-  border: 3px solid #FFFFFF;
-}
-
-.card-delivery-text span {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 575px) {
@@ -464,10 +455,33 @@ footer {
   color: #090d36;
 }
 
+.btn-go-back {
+  color: #090d36;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #090d36;
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.btn-go-back:hover {
+  background-color: #090d36;
+}
+
 .btn-size {
   border: 2px solid #dfdfe1 !important;
   border-radius: 8px;
   padding: 2rem 8rem 1rem 1rem;
+}
+
+.btn-size-logo img {
+  width: 11rem;
+  height: 5.3rem;
 }
 
 .btn-size:hover {
@@ -475,7 +489,7 @@ footer {
           transform: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 2px solid #000000 !important;
+  border: 2px solid #090d36 !important;
 }
 
 .btn-size:hover::after {
@@ -497,34 +511,6 @@ footer {
 .btn-basket:hover {
   background-color: rgba(123, 97, 255, 0.85);
   color: #FFFFFF;
-}
-
-.btn-txt:link, .btn-txt:visited {
-  color: #090d36;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 1.6rem;
-  border-bottom: 1px solid #090d36;
-  padding: 3px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.btn-txt:hover {
-  background-color: #A17DFD;
-  color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-}
-
-.btn-txt:active {
-  -webkit-box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .google-icon {
@@ -1024,6 +1010,7 @@ button:focus {
 
 #nav--2 .dropdown-menu {
   font-size: 1.6rem;
+  font-weight: 500;
   text-decoration: none;
   top: 3.6rem;
 }
@@ -1034,6 +1021,10 @@ button:focus {
   border-right: .3em solid transparent;
   border-bottom: 0;
   border-left: .3em solid transparent;
+}
+
+#nav--2 .dropdown-item.active, #nav--2 .dropdown-item:active {
+  background-color: #CD9FFA;
 }
 
 #nav--2 .nav-link {
@@ -1120,6 +1111,30 @@ button:focus {
 
 #contact button#submit:hover {
   background: #7B61FF;
+  color: #FFFFFF;
+}
+
+.section-partners {
+  background-color: #F7F8FB;
+}
+
+.section-partners input {
+  font-size: 1.6rem;
+  border-radius: .8rem;
+}
+
+.section-partners .form-control:focus {
+  color: #dfdfe1;
+  border-color: #CD9FFA !important;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(205, 159, 250, 0.25) !important;
+          box-shadow: 0 0 0 0.2rem rgba(205, 159, 250, 0.25) !important;
+}
+
+.section-partners .input-group-text {
+  font-size: 1.6rem;
+  border-radius: .8rem;
+  background-color: #7B61FF;
   color: #FFFFFF;
 }
 

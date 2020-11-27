@@ -57,15 +57,35 @@
     }
   }
 
+  &-go-back {
+    color: $color-text;
+    display: inline-block;
+    font-weight: 600;
+    font-size: $default-font-size;
+    border: 1px solid $color-text;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:hover {
+      background-color: $color-text;
+    }
+  }
+
   &-size {
     border: 2px solid $color-grey !important;
     border-radius: 8px;
     padding: 2rem 8rem 1rem 1rem;
 
+    &-logo img {
+      width: 11rem;
+      height: 5.3rem;
+    }
+
     &:hover {
       transform: none;
       box-shadow: none;
-      border: 2px solid $color-black !important;
+      border: 2px solid $color-text !important;
 
   
       &::after {
@@ -94,31 +114,31 @@
   
 }
 
-.btn-txt {
-  &:link,
-  &:visited {
-    color: $color-text;
-    display: inline-block;
-    font-weight: 600;
-    font-size: $default-font-size;
-    border-bottom: 1px solid $color-text;
-    padding: 3px;
-    transition: all .2s;
-  }
+// .btn-txt {
+//   &:link,
+//   &:visited {
+//     color: $color-text;
+//     display: inline-block;
+//     font-weight: 600;
+//     font-size: $default-font-size;
+//     border-bottom: 1px solid $color-text;
+//     padding: 3px;
+//     transition: all .2s;
+//   }
 
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    border-bottom: 1px solid $color-white;
-    box-shadow: 0 3rem 2rem rgba($color-black, .15);
-    transform: translateY(-2px);
-  }
+//   &:hover {
+//     background-color: $color-primary;
+//     color: $color-white;
+//     border-bottom: 1px solid $color-white;
+//     box-shadow: 0 3rem 2rem rgba($color-black, .15);
+//     transform: translateY(-2px);
+//   }
 
-  &:active {
-    box-shadow: 0 3rem 2rem rgba($color-black, .15);
-    transform: translateY(0);
-  }
-}
+//   &:active {
+//     box-shadow: 0 3rem 2rem rgba($color-black, .15);
+//     transform: translateY(0);
+//   }
+// }
 
 .google-icon {
   height: 1.8rem;

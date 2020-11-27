@@ -256,9 +256,9 @@ button:focus {
 
   .dropdown-menu {
     font-size: $default-font-size;
+    font-weight: 500;
     text-decoration: none;
     top: 3.6rem;
-
   }
 
   .dropdown-toggle::after {
@@ -267,7 +267,10 @@ button:focus {
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
-}
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    background-color: $color-primary-light;
+  }
 }
 
 #nav--2 .nav-link {

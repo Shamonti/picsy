@@ -41,6 +41,28 @@
   color: $color-white;
 }
 
+.section-partners {
+  background-color: $color-grey-light;
+
+  input {
+    font-size: $default-font-size;
+    border-radius: .8rem;
+  }
+
+  .form-control:focus {
+    color: $color-grey;
+    border-color: $color-primary-light !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba($color-primary-light, .25) !important;
+  }
+
+  .input-group-text {
+    font-size: $default-font-size;
+    border-radius: .8rem;
+    background-color: $color-primary-dark;
+    color: $color-white;
+  }
+}
 
 .footer {
   font-size: $default-font-size;
