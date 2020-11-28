@@ -1143,6 +1143,11 @@ button:focus {
   color: #FFFFFF;
 }
 
+.section-dashboard .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .section-dashboard .bg-dashboard {
   background-color: rgba(9, 13, 54, 0.48);
 }
@@ -1183,6 +1188,29 @@ button:focus {
   color: #000000;
 }
 
+.section-dashboard--upload-art .custom-control-label::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: .5rem;
+}
+
+.section-dashboard--upload-art .custom-control-label::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: .5rem;
+}
+
+.section-dashboard--upload-art #input-price {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  border-radius: 0px;
+  padding: 0;
+  margin-bottom: 1.2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .section-dashboard--check-status img {
   height: 9rem;
 }
@@ -1194,6 +1222,7 @@ button:focus {
 .section-dashboard .btn-go-back {
   color: #FFFFFF;
   border-color: #FFFFFF;
+  z-index: 10;
 }
 
 .section-dashboard .btn-go-back:hover {
@@ -1333,6 +1362,19 @@ button:focus {
 
 .login-form label {
   font-size: 1.6rem;
+}
+
+.login-form a {
+  color: #7B61FF;
+  text-decoration: underline !important;
+}
+
+.login-form a:hover {
+  color: rgba(123, 97, 255, 0.85);
+}
+
+#check-box {
+  height: 2rem !important;
 }
 
 .login-logo {

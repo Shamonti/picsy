@@ -134,63 +134,100 @@
     </header>
 
     <main>
-      <section class="section-dashboard u-margin-top-large u-section-padding">
+      <section class="section-dashboard section-dashboard--upload-art u-margin-top-large u-section-padding">
         <div class="container">
           <div class="row">
-            <div class="offset-md-1 col-md-10 bg-dashboard py-5">
-              <div class="row pt-5">
-                <div class="col md-12 text-center">
-                  <h1>You're logged in as admin@admin.com</h1>
-                  <p>Picsy offers you 2 Features/Services. What do you need?</p>
-                </div>
-              </div>
-              <div class="row mx-1 py-5">
-                <div class="col-md-6 mb-4 mb-md-0">
-                  <a href="digitize_art.html"><button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Digitize Your Artwork
-                    <br>
-                    <span>*Send us your art</span>
-                  </button>
-                </a>                    
-                </div>
-                <div class="col-md-6">
-                  <a href="upload_art.html">
-                    <button type="button" class="btn btn-solid btn-solid--square py-3">Upload Your Art
-                      <br>
-                      <span>*Let us sell it for you</span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <hr>
-              <div class="row mx-1 py-5">
-                <div class="col-md-12 text-center pb-5">
-                  <p>Dashboard actions for artists with some uploads.</p>
-                </div>
-                
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <a href="check_status.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Check Status Of Your Artwork
-                    </button>
-                  </a>
-                </div>
-                <div class="col-md-4 mb-4 mb-md-0">
-                  <a href="show_sales.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Get Stats/Sales Information
-                    </button>
-                  </a>
-                  
-                </div>
-                <div class="col-md-4">
-                  <a href="delete_art.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Delete Your Artwork
-                    </button>
-                  </a>
-                </div>
-              </div>
-
+            <div class="col-md-12">
+              <a href="seller-dashboard.html" class="btn-go-back btn-position text-uppercase">
+                <i class="fas fa-hand-point-left pr-1"></i>
+                back to dashboard
+              </a>
             </div>
           </div>
-          
+          <div class="row">
+            <div class="offset-md-1 col-md-10 bg-dashboard py-5">
+              <div class="row py-5">
+                <div class="offset-md-2 col-md-8">
+
+                  <form action="" method="">
+                    <div class="form-group">
+                      <label>Title of your Artwork</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group">
+                      <label for="description">Write Description (minimum 50 words)</label>
+                      <textarea class="form-control" id="description" rows="5" requires></textarea>
+                    </div>
+
+                    <span>Upload Camera Photos</span>
+                    <div class="input-group my-2">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" multiple>
+                        <label class="custom-file-label w-75" for="inputGroupFile01">Choose files</label>
+                      </div>
+                    </div>
+
+                    <div id="accordion">
+                      <div class="card mt-5">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-gradient btn-solid--square w-50" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Let us collect your Artwork
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="form-group">
+                            <label>Your Address</label>
+                            <input type="text" class="form-control" required>
+                          </div>
+                          <div class="form-group">
+                            <label>Notes  [Write about anything that can help delivery guy collect your artwork]</label>
+                            <textarea class="form-control" rows="2" required></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="text-center">OR</h2>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-gradient btn-solid--square w-50 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Send us your Artwork
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="form-group">
+                            <span>Send us your artwork at 334 High Street Jarrow NE32 3BH with your name and email address + Studio name.
+                            </span>
+                          </div>
+                          <div class="form-group">
+                            <span>Do you want us to return your artwork after digitization?</span> <br>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                              <label class="custom-control-label pl-2" for="customRadioInline1">Yes</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                              <label class="custom-control-label pl-2" for="customRadioInline2">No</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    
+                    <div class="col-md-12 text-center mt-5">
+                      <button type="submit" class="btn btn-solid btn-solid--square w-25 p-2 m-3">Submit</button>
+                    </div>
+                    
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

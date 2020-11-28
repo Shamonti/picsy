@@ -46,6 +46,19 @@
   label {
     font-size: 1.6rem;
   }
+  
+  a {
+    color: $color-primary-dark;
+    text-decoration: underline !important;
+  
+    &:hover {
+      color: rgba($color-primary-dark, .85)  ;
+    }
+  }
+}
+
+#check-box {
+  height: 2rem !important;
 }
 
 .login-logo {
