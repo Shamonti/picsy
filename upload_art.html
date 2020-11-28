@@ -134,69 +134,51 @@
     </header>
 
     <main>
-      <section class="section-dashboard u-margin-top-large u-section-padding">
+      <section class="section-dashboard section-dashboard--upload-art u-margin-top-large u-section-padding">
         <div class="container">
           <div class="row">
-            <div class="offset-md-1 col-md-10 bg-dashboard py-5">
-              <div class="row pt-5">
-                <div class="col md-12 text-center">
-                  <h1>You're logged in as admin@admin.com</h1>
-                  <p class="text-capitalize">picsy offers you 3 features/services. what do you need?</p>
-                </div>
-              </div>
-              <div class="row mx-1 py-5">
-                <div class="col-md-4">
-                  <a href="#"><button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Digitize Your Artwork
-                    <br>
-                    <span>*Send us your art</span>
-                  </button>
-                </a>                    
-                </div>
-                <div class="col-md-4">
-                  <a href="upload_art.html">
-                    <button type="button" class="btn btn-solid btn-solid--square py-3">Upload Your Art
-                      <br>
-                      <span>*Let us sell it for you</span>
-                    </button>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Collect My Art, 
-                    <br>
-                    Digitize It, Return It.
-                  </button>
-                </div>
-              </div>
-              <hr>
-              <div class="row mx-1 py-5">
-                <div class="col-md-12 text-center pb-5 text-capitalize">
-                  <p>Dashboard actions for artists with some uploads</p>
-                </div>
-                
-                <div class="col-md-4">
-                  <a href="check_status.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Check Status Of Your Artwork
-                    </button>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a href="show_sales.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Get Stats/Sales Information
-                    </button>
-                  </a>
-                  
-                </div>
-                <div class="col-md-4">
-                  <a href="delete_art.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Delete Your Artwork
-                    </button>
-                  </a>
-                </div>
-              </div>
-
+            <div class="col-md-12">
+              <a href="seller-dashboard.html" class="btn-go-back btn-position text-uppercase">
+                <i class="fas fa-hand-point-left pr-1"></i>
+                back to dashboard
+              </a>
             </div>
           </div>
-          
+          <div class="row">
+            <div class="offset-md-1 col-md-10 bg-dashboard py-5">
+              <div class="row py-5">
+                <div class="offset-md-2 col-md-8">
+
+                  <form action="" method="">
+                    <div class="form-group">
+                      <label>Title of your Artwork</label>
+                      <input type="text" class="form-control" required>
+                    </div>
+    
+                    <div class="form-group">
+                      <label for="description">Write Description (minimum 50 words)</label>
+                      <textarea class="form-control" id="description" rows="5" requires></textarea>
+                    </div>
+
+                    <span>Upload your work</span>
+                    <div class="input-group my-2">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-solid btn-solid--square w-25 p-2 m-3">Upload</button>
+                      <button type="submit" class="btn btn-solid btn-solid--square w-25 p-2 m-3">Go Back</button>
+                    </div>
+                    
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

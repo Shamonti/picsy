@@ -2,14 +2,19 @@
   background: url(../img/background.jpg);
   background-position: center;
   background-size: cover;
-  color: $color-text;
+  color: $color-white;
 
   .bg-dashboard {
-    background-color: rgba($color-white, .88);
+    background-color: rgba($color-text, .48);
   }
 
   p {
-    color: $color-text;
+    color: $color-white;
+  }
+
+  hr {
+    background-color: $color-white;
+    margin: 1.5rem 2.5rem;
   }
 
   button {
@@ -20,6 +25,61 @@
     span {
       font-size: 1.4rem;
     }
+  }
+
+  &--upload-art {
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    input, textarea {
+      padding: 1.8rem;
+      font-weight: 600;
+      font-size: $default-font-size;
+      color: $color-black;
+      border-radius: 5px;
+    }
+    .form-control:focus {
+      color: $color-black;
+    }
+  }
+
+  &--check-status {
+    
+    
+    img {
+      height: 9rem;
+    }
+  }
+
+  &--show-sales {
+    
+    table {
+      text-align: center;
+    }
+  }
+
+  .btn-go-back {
+    color: $color-white;
+    border-color: $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-text;
+      border-color: $color-text;
+    }
+  }
+
+  .btn-position {
+    top: -7rem;
+  }
+
+  .table-default {
+    background-color: rgba($color-grey-light,  .80);
+    
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba($color-primary-dark,.25);
   }
 }
 

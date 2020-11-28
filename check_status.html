@@ -134,69 +134,72 @@
     </header>
 
     <main>
-      <section class="section-dashboard u-margin-top-large u-section-padding">
+      <section class="section-dashboard section-dashboard--check-status u-margin-top-large u-section-padding">
         <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="seller-dashboard.html" class="btn-go-back btn-position text-uppercase">
+                <i class="fas fa-hand-point-left pr-1"></i>
+                back to dashboard
+              </a>
+            </div>
+          </div>
           <div class="row">
             <div class="offset-md-1 col-md-10 bg-dashboard py-5">
               <div class="row pt-5">
                 <div class="col md-12 text-center">
-                  <h1>You're logged in as admin@admin.com</h1>
-                  <p class="text-capitalize">picsy offers you 3 features/services. what do you need?</p>
+                  <h1>Status List For Your Artworks</h1>
                 </div>
               </div>
-              <div class="row mx-1 py-5">
-                <div class="col-md-4">
-                  <a href="#"><button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Digitize Your Artwork
-                    <br>
-                    <span>*Send us your art</span>
-                  </button>
-                </a>                    
-                </div>
-                <div class="col-md-4">
-                  <a href="upload_art.html">
-                    <button type="button" class="btn btn-solid btn-solid--square py-3">Upload Your Art
-                      <br>
-                      <span>*Let us sell it for you</span>
-                    </button>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Collect My Art, 
-                    <br>
-                    Digitize It, Return It.
-                  </button>
-                </div>
-              </div>
-              <hr>
-              <div class="row mx-1 py-5">
-                <div class="col-md-12 text-center pb-5 text-capitalize">
-                  <p>Dashboard actions for artists with some uploads</p>
-                </div>
-                
-                <div class="col-md-4">
-                  <a href="check_status.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Check Status Of Your Artwork
-                    </button>
-                  </a>
-                </div>
-                <div class="col-md-4">
-                  <a href="show_sales.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Get Stats/Sales Information
-                    </button>
-                  </a>
-                  
-                </div>
-                <div class="col-md-4">
-                  <a href="delete_art.html">
-                    <button type="button" class="btn btn-gradient btn-gradient--dashboard py-3">Delete Your Artwork
-                    </button>
-                  </a>
-                </div>
-              </div>
+              <div class="row py-5">
+                <div class="offset-md-1 col-md-10">
 
+                  <table class="table table-striped table-default table-hover table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th style="width: 20%;" scope="col">Article Title</th>
+                        <th scope="col">Description</th>
+                        <th style="width:16%;" scope="col">Image</th>
+                        <th style="width: 23%;" scope="col">Current Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Website for an NGO.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                        <td><img src="img/card_img_1.jpg" class="img-fluid" alt="flowers"></td>
+                        <td>Upload is complete</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Website for an NGO.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                        <td><img src="img/card_img_1.jpg" class="img-fluid" alt="flowers"></td>
+                        <td>Upload is complete</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Website for an NGO.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                        <td><img src="img/background.jpg" class="img-fluid" alt="flowers"></td>
+                        <td>Upload is complete</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Website for an NGO.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                        <td><img src="img/card_img_1.jpg" class="img-fluid" alt="flowers"></td>
+                        <td>Upload is complete</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
             </div>
           </div>
-          
         </div>
       </section>
     </main>

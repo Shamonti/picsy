@@ -64,36 +64,3 @@
   }
 }
 
-.footer {
-  font-size: $default-font-size;
-  background-color: $color-text;
-  color: $color-white;
-  padding-bottom: 3%;
-  padding-top: 2%;
-}
-
-.footer ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-.footer .bottom-line ul li {
-  display: inline;
-  padding: 15px;
-}
-
-.footer .line {
-  background-color: white !important;
-  width: 100%;
-}
-
-.footer .social-media a {
-  padding: 7px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-.footer__logo {
-  height: 12rem;
-}
