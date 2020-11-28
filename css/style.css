@@ -1211,7 +1211,7 @@ button:focus {
 }
 
 .section-dashboard .table-hover tbody tr:hover {
-  background-color: rgba(123, 97, 255, 0.25);
+  background-color: rgba(123, 97, 255, 0.2);
 }
 
 .section-products {
