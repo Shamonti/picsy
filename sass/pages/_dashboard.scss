@@ -1,0 +1,26 @@
+.section-dashboard {
+  height: 90rem;
+  background: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: $color-text;
+
+  .bg-dashboard {
+    background-color: rgba($color-white, .88);
+  }
+
+  p {
+    color: $color-text;
+  }
+
+  button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+

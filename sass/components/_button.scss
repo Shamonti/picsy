@@ -32,13 +32,20 @@
       box-shadow: none;
   }
 
-  &--login {
-    width: 80%;
+  &-gradient {
     background: linear-gradient(to right, $color-primary-dark, $color-primary-light);
-    margin-left: 10%;
-    margin-top: 5%;
     color: $color-white;
 
+    &--user-form {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+    }
+
+    &--dashboard {
+      border-radius: 5px;
+    }
+    
     &:hover {
       color: $color-white;
     }
@@ -101,10 +108,17 @@
     }
   }
 
-  &-basket {
-    width: 60%;
+  &-solid {
     background-color: $color-primary-dark;
     color: $color-white;
+
+    &--round {
+      width: 60%;
+    }
+
+    &--square {
+      border-radius: 5px;
+    }
 
     &:hover {
       background-color: rgba($color-primary-dark, .85);

@@ -39,7 +39,6 @@
     
   }
 
-  
   .progress {
     margin-top: .6rem;
   }
@@ -59,11 +58,7 @@
   color: $color-text;
 }
 
-.review-txt {
-  color: $color-text;
-  font-size: $default-font-size;
-  font-weight: 600;
-}
+
 
 @media only screen and (max-width: 575px){
   /*Mobile Phones*/
@@ -75,8 +70,4 @@
     }
     
   }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px){
-  /*Tablets*/
 }

@@ -338,6 +338,8 @@ a:hover {
 }
 
 .product-text--green {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   color: #247139;
   line-height: 3rem;
 }
@@ -351,6 +353,12 @@ a:hover {
   color: #7B61FF;
 }
 
+.review-txt {
+  color: #090d36;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
   .heading-primary--main {
@@ -360,10 +368,6 @@ a:hover {
   }
   .heading-primary--sub {
     font-size: 1.7rem;
-  }
-  .card-delivery-text {
-    top: 25rem;
-    left: 7.5rem;
   }
 }
 
@@ -438,16 +442,23 @@ footer {
           box-shadow: none;
 }
 
-.btn--login {
-  width: 80%;
+.btn-gradient {
   background: -webkit-gradient(linear, left top, right top, from(#7B61FF), to(#CD9FFA));
   background: linear-gradient(to right, #7B61FF, #CD9FFA);
-  margin-left: 10%;
-  margin-top: 5%;
   color: #FFFFFF;
 }
 
-.btn--login:hover {
+.btn-gradient--user-form {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.btn-gradient--dashboard {
+  border-radius: 5px;
+}
+
+.btn-gradient:hover {
   color: #FFFFFF;
 }
 
@@ -511,13 +522,20 @@ footer {
   border: 2px solid #7B61FF !important;
 }
 
-.btn-basket {
-  width: 60%;
+.btn-solid {
   background-color: #7B61FF;
   color: #FFFFFF;
 }
 
-.btn-basket:hover {
+.btn-solid--round {
+  width: 60%;
+}
+
+.btn-solid--square {
+  border-radius: 5px;
+}
+
+.btn-solid:hover {
   background-color: rgba(123, 97, 255, 0.85);
   color: #FFFFFF;
 }
@@ -1079,6 +1097,32 @@ button:focus {
   }
 }
 
+.section-dashboard {
+  height: 90rem;
+  background: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #090d36;
+}
+
+.section-dashboard .bg-dashboard {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.section-dashboard p {
+  color: #090d36;
+}
+
+.section-dashboard button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.section-dashboard button span {
+  font-size: 1.4rem;
+}
+
 .section-products {
   background-color: #F7F8FB;
 }
@@ -1149,7 +1193,7 @@ button:focus {
 
 .footer {
   font-size: 1.6rem;
-  background-color: #090d36 !important;
+  background-color: #090d36;
   color: #FFFFFF;
   padding-bottom: 3%;
   padding-top: 2%;
@@ -1358,21 +1402,11 @@ button:focus {
   color: #090d36;
 }
 
-.review-txt {
-  color: #090d36;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
   .section-product-image img {
     height: 90vh;
     width: 100%;
   }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-  /*Tablets*/
 }
 /*# sourceMappingURL=style.css.map */
