@@ -610,6 +610,10 @@ footer {
   color: #090d36;
 }
 
+.btn-red {
+  background-color: #F34541 !important;
+}
+
 .card {
   -webkit-transition: all .8s ease-out;
   transition: all .8s ease-out;
