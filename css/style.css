@@ -1164,6 +1164,11 @@ button:focus {
   font-weight: 600;
 }
 
+.artist-top-products .card .wishlist-btn {
+  height: 2.4rem;
+  width: 2.5rem;
+}
+
 .artist-top-products .card:hover .cart-btn {
   top: 42%;
   left: 32%;
@@ -1185,6 +1190,7 @@ button:focus {
 @media only screen and (max-width: 575px) {
   /*Mobile Phones*/
   .artist-top-products .card:hover .cart-btn {
+    top: 42%;
     left: 38%;
   }
   .artist-product .card:hover .cart-btn {

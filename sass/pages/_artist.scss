@@ -17,12 +17,18 @@
   font-weight: 600;
 }
 
-.artist-top-products .card:hover{
-  .cart-btn {
-    top: 42%;
-    left: 32%;
+.artist-top-products {
+  .card .wishlist-btn {
+    height: 2.4rem;
+    width: 2.5rem;
   }
-}
+  .card:hover{
+    .cart-btn {
+      top: 42%;
+      left: 32%;
+    }
+  }
+} 
 
 .artist-product {
   .card-rating img{
@@ -43,6 +49,7 @@
   /*Mobile Phones*/
   .artist-top-products .card:hover{
     .cart-btn {
+      top: 42%;
       left: 38%;
     }
   }
