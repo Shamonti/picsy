@@ -71,3 +71,17 @@
     
   }
 }
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .section-product-comments {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+  .section-product-comments {
+    display: none;
+  }
+}

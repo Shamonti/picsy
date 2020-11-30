@@ -557,7 +557,7 @@ footer {
   top: 1rem;
 }
 
-.section-products .wishlist-btn {
+.card .wishlist-btn {
   color: #090d36;
   background-color: #FFFFFF;
   position: absolute;
@@ -568,7 +568,7 @@ footer {
   padding: 2px 1rem 5px 5px;
 }
 
-.section-products .wishlist-btn:hover {
+.card .wishlist-btn:hover {
   background-color: #090d36;
   color: #FFFFFF;
 }
@@ -685,6 +685,7 @@ footer {
     height: 34rem;
   }
   .card:hover .cart-btn {
+    top: 50%;
     left: 40%;
   }
 }
@@ -962,7 +963,7 @@ button:focus {
   }
   .nav-link {
     color: #090d36 !important;
-    padding: 2rem !important;
+    padding: 1rem !important;
   }
   nav .navbar-nav .nav-link:hover {
     color: #090d36 !important;
@@ -1007,7 +1008,7 @@ button:focus {
     background: #FFFFFF;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    padding-top: 30%;
+    padding-top: 15%;
   }
 }
 
@@ -1015,7 +1016,7 @@ button:focus {
   /*Tablets*/
   .nav-link {
     color: #090d36 !important;
-    padding: 3rem !important;
+    padding: 1.5rem !important;
   }
   nav .navbar-nav .nav-link:hover {
     color: #090d36 !important;
@@ -1031,7 +1032,7 @@ button:focus {
   }
   .navbar-nav {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .navbar.scroll .nav-link:hover::after {
     content: "";
@@ -1060,7 +1061,7 @@ button:focus {
     background: #FFFFFF;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    padding-top: 20%;
+    padding-top: 8%;
   }
 }
 
@@ -1133,6 +1134,58 @@ button:focus {
   }
   #search-bar {
     display: none;
+  }
+}
+
+.artist-image {
+  margin: auto;
+}
+
+.artist-image img {
+  height: 38rem;
+}
+
+.artist-name {
+  color: #090d36;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.studio-name {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.artist-top-products .card:hover .cart-btn {
+  top: 42%;
+  left: 32%;
+}
+
+.artist-product .card-rating img {
+  height: 2.6rem;
+}
+
+.artist-product .card .wishlist-btn {
+  height: 2.4rem;
+  width: 2.5rem;
+}
+
+.section-artist-description {
+  background-color: #F7F8FB;
+}
+
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .artist-top-products .card:hover .cart-btn {
+    left: 38%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*Tablets*/
+  .artist-top-products .card:hover .cart-btn {
+    left: 22%;
   }
 }
 
@@ -1459,15 +1512,15 @@ button:focus {
   color: #000000;
 }
 
-ol {
+.section-policy ol {
   list-style: none;
 }
 
-ul, li {
+.section-policy ul, .section-policy li {
   margin: 1rem 0 1rem 2rem;
 }
 
-span {
+.section-policy span {
   font-weight: 600;
 }
 
@@ -1532,6 +1585,20 @@ span {
   .section-product-image img {
     height: 90vh;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .section-product-comments {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*Tablets*/
+  .section-product-comments {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
