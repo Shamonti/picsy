@@ -1,0 +1,19 @@
+.section-policy {
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: $color-black;
+  }
+
+  p, ol, li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: $color-black;
+  }
+}
+
+ol {list-style:none;}
+ul, li {margin: 1rem 0 1rem 2rem;}
+span {font-weight: 600;}
