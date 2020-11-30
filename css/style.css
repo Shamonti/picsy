@@ -408,6 +408,12 @@ footer {
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   /*Tablets*/
+  .u-margin-top-large {
+    margin-top: 10rem;
+  }
+  .u-section-padding {
+    padding: 7rem 0;
+  }
 }
 
 .btn, .btn:link, .btn:visited {
@@ -593,6 +599,7 @@ footer {
   color: #090d36;
   border: 1px solid #090d36;
   display: none !important;
+  padding: .8rem 1.5rem;
 }
 
 .btn-search, .btn-search:link, .btn-search:visited {
@@ -685,7 +692,7 @@ footer {
     height: 34rem;
   }
   .card:hover .cart-btn {
-    top: 50%;
+    top: 25%;
     left: 40%;
   }
 }
@@ -1008,7 +1015,7 @@ button:focus {
     background: #FFFFFF;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    padding-top: 15%;
+    padding-top: 30%;
   }
 }
 
@@ -1061,7 +1068,7 @@ button:focus {
     background: #FFFFFF;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    padding-top: 8%;
+    padding-top: 15%;
   }
 }
 
@@ -1180,11 +1187,19 @@ button:focus {
   .artist-top-products .card:hover .cart-btn {
     left: 38%;
   }
+  .artist-product .card:hover .cart-btn {
+    top: 30%;
+    left: 38%;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   /*Tablets*/
   .artist-top-products .card:hover .cart-btn {
+    left: 20%;
+  }
+  .artist-product .card:hover .cart-btn {
+    top: 18%;
     left: 22%;
   }
 }

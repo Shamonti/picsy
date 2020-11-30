@@ -46,12 +46,24 @@
       left: 38%;
     }
   }
+  .artist-product .card:hover{
+    .cart-btn {
+      top: 30%;
+      left: 38%;
+    }
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px){
   /*Tablets*/
   .artist-top-products .card:hover{
     .cart-btn {
+      left: 20%;
+    }
+  }
+  .artist-product .card:hover{
+    .cart-btn {
+      top: 18%;
       left: 22%;
     }
   }
