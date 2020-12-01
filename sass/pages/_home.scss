@@ -2,8 +2,14 @@
   background-color: $color-grey-light;
 }
 
-.contact-info .fa {
-  padding-right: 5px;
+#contact .section-details i {
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  margin-left: 1rem;
+}
+
+#contact .section-details p {
+  margin: auto;
 }
 
 #contact .form-control {
