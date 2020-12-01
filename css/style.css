@@ -164,6 +164,20 @@ body {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*Tablets*/
+  html {
+    font-size: 60%;
+  }
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -394,6 +408,10 @@ footer {
 
 .modal span {
   font-size: 1.6rem;
+}
+
+.text-default {
+  color: #000000;
 }
 
 .u-margin-top-large {
@@ -1170,6 +1188,10 @@ button:focus {
   color: #000000;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.artist-top-products img {
+  height: 22rem;
 }
 
 .artist-top-products .card .wishlist-btn {

@@ -211,12 +211,11 @@ a {
       font-weight: 700;
       letter-spacing: 3.5;
     }
-
+    
     &--sub {
       font-size: 1.7rem;
     }
   }
-
 }
 
 .links {
@@ -242,4 +241,8 @@ footer {
   span {
     font-size: $default-font-size;
   }
+}
+
+.text-default {
+  color: $color-black;
 }
