@@ -235,6 +235,11 @@ footer {
   line-height: 2.5rem;
 }
 
-.modal-title {
-  color: $color-black;
+.modal {
+  .modal-title {
+    color: $color-black;
+  }
+  span {
+    font-size: $default-font-size;
+  }
 }

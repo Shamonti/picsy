@@ -388,8 +388,12 @@ footer {
   line-height: 2.5rem;
 }
 
-.modal-title {
+.modal .modal-title {
   color: #000000;
+}
+
+.modal span {
+  font-size: 1.6rem;
 }
 
 .u-margin-top-large {
