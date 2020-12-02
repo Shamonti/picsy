@@ -1,3 +1,19 @@
+.section-features {
+  .nav-pills .nav-link{
+    font-size: 2rem;
+    background-color: transparent;
+    color: rgba($color-text, .65);
+    margin-right: 16rem;
+
+    i {
+      font-size: 5rem;
+    }
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $color-text !important;
+  }
+}
 .section-products {
   background-color: $color-grey-light;
 }

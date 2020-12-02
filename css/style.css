@@ -243,7 +243,7 @@ a:hover {
 
 .heading-secondary {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #090d36;
 }
 
@@ -1512,6 +1512,21 @@ button:focus {
 .text-xl-left {
   -webkit-animation: moveInLeft 1s ease-out;
           animation: moveInLeft 1s ease-out;
+}
+
+.section-features .nav-pills .nav-link {
+  font-size: 2rem;
+  background-color: transparent;
+  color: rgba(9, 13, 54, 0.65);
+  margin-right: 16rem;
+}
+
+.section-features .nav-pills .nav-link i {
+  font-size: 5rem;
+}
+
+.section-features .nav-pills .nav-link.active, .section-features .nav-pills .show > .nav-link {
+  color: #090d36 !important;
 }
 
 .section-products {
