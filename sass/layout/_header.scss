@@ -99,7 +99,7 @@ button:focus {
   }
 
   .navbar .navbar-brand, .navbar .nav-link {
-      color: $color-text;
+      color: $color-text !important;
   }
 }
 
