@@ -9,6 +9,12 @@
       font-size: 5rem;
     }
   }
+  .nav-item {
+    width: 25%;
+  }
+  .nav-pills a {
+    margin: 0 auto !important;
+  }
 
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: $color-text !important;

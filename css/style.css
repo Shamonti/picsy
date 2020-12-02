@@ -1525,6 +1525,14 @@ button:focus {
   font-size: 5rem;
 }
 
+.section-features .nav-item {
+  width: 25%;
+}
+
+.section-features .nav-pills a {
+  margin: 0 auto !important;
+}
+
 .section-features .nav-pills .nav-link.active, .section-features .nav-pills .show > .nav-link {
   color: #090d36 !important;
 }
