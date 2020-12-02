@@ -5,7 +5,7 @@
 }
 
 .nav-link {
-  color: $color-text !important;
+  color: $color-text;
   font-weight: 700;
   padding: 0 2.2rem !important;
   position: relative;
@@ -66,9 +66,11 @@ button:focus {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar.scroll .nav-link {
-  color: $color-text !important;
-}
+.navbar.scroll {
+  .nav-link {
+    color: $color-text !important;
+  }
+} 
 
 .navbar.scroll .nav-icon{
   color: $color-text !important;
@@ -108,6 +110,12 @@ button:focus {
 
 .bg-default {
   background-color: $color-white;
+
+  &--pink {
+    background: linear-gradient(0deg, rgba($color-pink, 0.75), rgba($color-pink, 0.75)), url(../img/background.jpg);
+    background-position: fixed;
+    background-size: cover;
+  }
 }
 
 .fa-bars {
@@ -119,7 +127,6 @@ button:focus {
   height: 8rem;
 }
 
-
 @media only screen and (max-width: 575px){
   /*Mobile Phones*/
   .logo {
@@ -127,7 +134,7 @@ button:focus {
   }
   
   .nav-link {
-    color: $color-text !important;
+    color: $color-text;
     padding: 1rem !important;
   }
 
@@ -157,7 +164,7 @@ button:focus {
     left: 43%;
     height: 2px;
     width: 15%;
-    background: $color-text !important;
+    background: $color-text;
   }
 
   .navbar-toggler {
@@ -217,7 +224,7 @@ button:focus {
     left: 45%;
     height: 2px;
     width: 10%;
-    background: $color-text !important;
+    background: $color-text;
   }
 
   .navbar-toggler {
@@ -315,4 +322,3 @@ button:focus {
     display: none;
   }
 }
-

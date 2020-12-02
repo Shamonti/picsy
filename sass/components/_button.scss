@@ -233,3 +233,10 @@
   background-color: $color-red-dark !important;
 }
 
+.btn-pink {
+  background-color: $color-pink;
+
+  &:hover {
+    background-color: rgba($color-pink, .85);
+  }
+}

@@ -67,7 +67,7 @@
           <div class="col-md-6 text-white pl-5 pb-5">
             <h2 class="text-uppercase  pl-5">You are here:</h2>
             <br>
-            <p class="text-white  pl-5"> <a href="seller-dashboard.html"> Dashboard </a><i class="fas fa-angle-double-right px-3"></i> <a href="#"> Upload your Art</a></p>
+            <p class="text-white  pl-5"> <a href="seller-dashboard.html"> Dashboard </a><i class="fas fa-angle-double-right px-3"></i> <a href="#"> Sales Report</a></p>
           </div>
           </div>
       </div>
@@ -78,67 +78,59 @@
 
     <main>
 
-      <section class="section-dashboard section-dashboard--upload-art u-section-padding">
+      <section class="section-dashboard section-dashboard--sales-report u-section-padding">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2 class="section-dashboard_heading-main font-weight-bold text-uppercase animate__animated animate__zoomIn">Upload</h2>
-              <h2 class="section-dashboard_heading-sub text-uppercase">Your
+              <h2 class="section-dashboard_heading-main font-weight-bold text-uppercase animate__animated animate__zoomIn">Sales</h2>
+              <h2 class="section-dashboard_heading-sub text-uppercase font-weight-bold">Report
                 <br>
-                <span class="font-weight-bold">Art</span>                
+                <span class=""></span>                
               </h2>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-md-12 text-center pt-5">
-              <p class="text-secondary">Please upload images containing your painting, illustration or photograph</p>
+          <div class="row py-5">
+            <div class="col-md-12">
+
+              <table class="table table-striped table-default table-hover table-borderless">
+                <thead>
+                  <tr>
+                    <th style="width: 5%;" scope="col"></th>
+                    <th style="width: 25%;" scope="col">Article Title</th>
+                    <th scope="col">Description</th>
+                    <th style="width:18%;" scope="col">Total Sales</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Website for an NGO.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Website for an NGO.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Website for an NGO.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Website for an NGO.</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur vitae nulla possimus suscipit inventore.</td>
+                    <td>10</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </div>
           </div>
-          <div class="row pt-3">
-            <div class="offset-md-2 col-md-8">
-
-              <form action="" method="">
-                <div class="form-group">
-                  <label>Title of your Artwork</label>
-                  <input type="text" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="description">Write Description (minimum 50 words)</label>
-                  <textarea class="form-control" id="description" rows="5" requires></textarea>
-                </div>
-
-                <span>Artwork Images</span>
-                <div class="input-group my-2">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" multiple>
-                    <label class="custom-file-label w-75" for="inputGroupFile01">Choose files</label>
-                  </div>
-                </div>
-
-                <div class="form-inline">
-                  <label>Price you want to sell it for</label>
-                  <input type="text" id="input-price" class="form-control w-25 ml-3" required>
-                </div>
-
-                <span>Allow Picsy to adjust prices?</span>
-                <div class="custom-control custom-radio custom-control-inline ml-5">
-                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label pl-2" for="customRadioInline1">Yes</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label pl-2" for="customRadioInline2">No</label>
-                </div>
-                
-                <div class="col-md-12 text-center mt-5">
-                  <button type="submit" class="btn btn-solid btn-solid--square btn-pink w-25 p-2 m-3">Submit</button>
-                </div>
-                
-              </form>
-
-            </div>
-        </div>
         </div>
       </section>
 

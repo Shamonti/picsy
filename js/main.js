@@ -1,7 +1,7 @@
 // ========= Navbar changes color on scroll =============
 $(function () {
   $(window).on('scroll', function () {
-      if ( $(window).scrollTop() > 150 ) {
+      if ( $(window).scrollTop() > 3 ) {
         $('.navbar').addClass('scroll');
       } else {
         $('.navbar').removeClass('scroll');
