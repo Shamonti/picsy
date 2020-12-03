@@ -722,6 +722,7 @@ footer {
 
 .section-products .swiper-slide {
   text-align: left !important;
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -1272,6 +1273,10 @@ button:focus {
   font-size: 2rem;
 }
 
+.section-dashboard .modal-title {
+  font-size: 1.6rem;
+}
+
 .section-dashboard .mobile-img {
   height: 55rem;
   width: 100%;
@@ -1292,7 +1297,7 @@ button:focus {
 
 .section-dashboard_heading-main {
   font-size: 10rem;
-  color: rgba(95, 114, 133, 0.2);
+  color: rgba(255, 255, 255, 0.85);
   position: relative;
 }
 
@@ -1305,10 +1310,28 @@ button:focus {
   top: 50%;
 }
 
+.section-dashboard--delete-art {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/upload_art-bg.jpg");
+  background-image: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/upload_art-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-dashboard--upload-art {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/upload_art-bg.jpg");
+  background-image: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/upload_art-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .section-dashboard--upload-art, .section-dashboard--digitize-art {
   font-weight: 600;
   font-size: 1.8rem;
   color: #000000;
+}
+
+.section-dashboard--upload-art label, .section-dashboard--digitize-art label {
+  font-weight: bold;
 }
 
 .section-dashboard--upload-art span, .section-dashboard--digitize-art span {
@@ -1348,6 +1371,13 @@ button:focus {
   margin-bottom: 1.2rem;
   color: #090d36;
   text-align: center;
+}
+
+.section-dashboard--digitize-art {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/upload_art-bg.jpg");
+  background-image: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/upload_art-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-dashboard--digitize-art .card-header {
@@ -1392,8 +1422,35 @@ button:focus {
   font-size: 1.4rem;
 }
 
+.section-dashboard--sales-report {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/sales_report-bg.jpg");
+  background-image: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/sales_report-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .section-dashboard--sales-report table {
   text-align: center;
+}
+
+.section-dashboard--print-status {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/banner--1.jpg");
+  background-image: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/banner--1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-dashboard--print-status .modal-header {
+  border-bottom: 1px solid #090d36;
+}
+
+.section-dashboard--print-status .modal-content {
+  background-color: rgba(205, 159, 250, 0.65);
+}
+
+.section-dashboard--print-status .modal .close {
+  color: #F34541;
+  font-size: 2.5rem;
 }
 
 .section-dashboard .btn-go-back {
@@ -1512,6 +1569,11 @@ button:focus {
 .text-xl-left {
   -webkit-animation: moveInLeft 1s ease-out;
           animation: moveInLeft 1s ease-out;
+}
+
+.page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .section-features .nav-pills .nav-link {
@@ -1636,8 +1698,8 @@ button:focus {
 .main .bottom-line {
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 30%;
-  margin-bottom: 10px;
+  margin-top: 16%;
+  margin-bottom: .5rem;
 }
 
 .login-form .form-group {
@@ -1694,7 +1756,7 @@ button:focus {
 
 @media screen and (max-width: 450px) {
   .login-form {
-    margin-top: 14%;
+    margin-top: 20%;
     margin-bottom: 5%;
   }
   .register-form {
@@ -1704,7 +1766,7 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .main {
-    margin-left: 46%;
+    margin-left: 48%;
   }
   .sidenav {
     width: 48%;
@@ -1714,13 +1776,13 @@ button:focus {
     left: 0;
   }
   .login-form {
-    margin-top: 45%;
+    margin-top: 38%;
     font-size: 1.6rem;
   }
 }
 
 #signup {
-  margin-top: 25%;
+  margin-top: 18%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -1741,7 +1803,7 @@ button:focus {
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   /*Tablets*/
   .main .bottom-line {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 }
 

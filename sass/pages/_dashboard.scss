@@ -5,13 +5,17 @@
   }
 }
 
-.section-dashboard {
+.section-dashboard {  
   a, span {
     color: $color-text;
   }
 
   h4 {
     font-size: 2rem;
+  }
+
+  .modal-title {
+    font-size: $default-font-size;
   }
 
   .mobile-img {
@@ -34,7 +38,7 @@
 
   &_heading-main {
     font-size: 10rem;
-    color: rgba($color-grey-dark, .2);
+    color: rgba($color-white, .85);
     position: relative;
   }
 
@@ -46,11 +50,27 @@
     left: 45%;
     top: 50%;
   }
-    
+
+  &--delete-art {
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--upload-art {
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
   &--upload-art, &--digitize-art {
     font-weight: 600;
     font-size: 1.8rem;
     color: $color-black;
+
+    label {
+      font-weight: bold;
+    }
 
     span {
       color: $color-black;
@@ -92,6 +112,10 @@
   }
 
   &--digitize-art {
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
     .card-header {
       border-bottom: transparent;
       background-color: transparent;
@@ -133,9 +157,33 @@
   }
 
   &--sales-report {
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/sales_report-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
     table {
       text-align: center;
     }
+  }
+
+  &--print-status {
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/banner--1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .modal {
+      &-header {
+        border-bottom: 1px solid $color-text;
+      }
+      &-content {
+        background-color: rgba($color-primary-light,.65);
+      }
+      .close {
+        color: $color-red-dark;
+        font-size: 2.5rem;
+      }
+    }
+    
   }
 
   .btn-go-back {
@@ -239,4 +287,8 @@
 
 .text-xl-left {
   animation: moveInLeft 1s ease-out;
+}
+
+.page-link:focus {
+  box-shadow: none;
 }
