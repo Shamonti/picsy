@@ -52,7 +52,7 @@
       display: block !important;
       position: absolute;
       top: 20%;
-      left: 33%;
+      left: 28%;
       background-color: $color-grey-light;
     }
   }
@@ -75,6 +75,30 @@
       .cart-btn {
         top: 25%;
         left: 40%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+  .card {
+    &:hover {  
+      .cart-btn {
+        top: 17%;
+        left: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1439px){
+  /*Laptops*/
+  .card {
+    &:hover {  
+      .cart-btn {
+        top: 18%;
+        left: 25%;
       }
     }
   }

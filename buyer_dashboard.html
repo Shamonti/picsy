@@ -79,7 +79,7 @@
                   />
                   <span class="input-group-btn">
                     <button class="btn-search" type="button">
-                      <i class="fas fa-search pr-2"></i>
+                      <i class="fas fa-search pr-2 text-white"></i>
                     </button>
                   </span>
                 </div>
@@ -94,14 +94,14 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link text-uppercase font-weight-bold"
-                  >Buy Art</a
+                  >Buy</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   href="seller-dashboard.html"
                   class="nav-link text-uppercase font-weight-bold"
-                  >Sell Art</a
+                  >Sell</a
                 >
               </li>
               <li class="nav-item">
@@ -128,6 +128,7 @@
         </div>
       </nav>
 
+      <!-- SECOND NAVBAR -->
       <div class="fixed-top" id="nav--2">
         <nav class="navbar navbar-expand-sm bg-default">
           <button
@@ -232,103 +233,12 @@
     </header>
 
     <main>
-      <section
-        class="section-product-details u-margin-top-large u-section-padding"
-      >
+      <!-- SLIDER -->
+      <div class="section-products u-margin-top-large u-section-padding">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 pr-md-5 product-image">
-              <img class="img-fluid" src="img/card_img_1.jpg" alt="flowers" />
-            </div>
-            <div class="col-md-6 pl-md-5 pt-5 pt-md-0">
-              <h1 class="product-title">Product Title</h1>
-              <p class="product-text">
-                See More by
-                <a class="links" href="artist_details.html">Artist</a>
-              </p>
-
-              <div class="product-review">
-                <span class="product-review--star">
-                  <img src="img/star.svg" alt="star-rating" />
-                  <img src="img/star.svg" alt="star-rating" />
-                  <img src="img/star.svg" alt="star-rating" />
-                  <img src="img/star.svg" alt="star-rating" />
-                  <img src="img/star_empty.svg" alt="star-rating" />
-                </span>
-                <span class="product-review--rating"> 4 </span>
-                <span class="product-review--num"> 2130 Reviews </span>
-              </div>
-
-              <p class="product-price">USD 10.99 &nbsp; <s>21.99</s></p>
-
-              <div class="delivery-block">
-                <p class="product-text">
-                  <span class="product-text--green"
-                    ><i class="fa fa-truck"></i> FREE 1-Day Delivery</span
-                  >
-                  <br />
-                  Get it Wed 30 Dec! Order within 1 min
-                </p>
-              </div>
-
-              <div class="select-size py-4">
-                <h3 class="pb-2">Select Size</h3>
-                <div class="row">
-                  <div class="col-md-12">
-                    <button type="button" class="btn btn-size mr-3">
-                      Small
-                    </button>
-                    <button type="button" class="btn btn-size mr-3">
-                      Medium
-                    </button>
-                    <button type="button" class="btn btn-size">Large</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row add-product mt-3 mb-5">
-                <div class="col-md-12">
-                  <div class="product-number input-group mr-3">
-                    <select class="custom-select mr-0" id="inputGroupSelect01">
-                      <option selected>1</option>
-                      <option value="1">2</option>
-                      <option value="2">3</option>
-                      <option value="3">4</option>
-                      <option value="3">5</option>
-                    </select>
-                  </div>
-
-                  <button type="button" class="btn wishlist-btn mr-3">
-                    <i class="far fa-heart text-center"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-solid btn-solid--round">
-                    Add to Basket
-                  </button>
-                </div>
-              </div>
-
-              <h2 class="product-heading py-3">Description</h2>
-
-              <p class="product-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                eius natus in labore omnis provident fugiat corporis, dolorem
-                ex. Commodi officia, voluptatibus architecto corporis facere
-                necessitatibus eos facilis beatae qui.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Itaque eius natus in labore omnis
-                provident fugiat corporis, dolorem ex. Commodi officia,
-                voluptatibus architecto eos facilis beatae qui.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-products">
-        <div class="container">
-          <div class="row u-section-padding">
             <div class="col-md-12">
-              <div class="swiper-container swiper1">
+              <div class="swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="card my-5 ml-md-3">
@@ -362,11 +272,14 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="card my-5 ml-3">
+                    <div class="card my-5 ml-md-3">
                       <img
                         class="card-img-top img-fluid"
                         src="img/card_img_1.jpg"
@@ -397,11 +310,14 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="card my-5 ml-3">
+                    <div class="card my-5 ml-md-3">
                       <img
                         class="card-img-top img-fluid"
                         src="img/card_img_1.jpg"
@@ -432,11 +348,14 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="card my-5 ml-3">
+                    <div class="card my-5 ml-md-3">
                       <img
                         class="card-img-top img-fluid"
                         src="img/card_img_1.jpg"
@@ -467,11 +386,14 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="card my-5 ml-3">
+                    <div class="card my-5 ml-md-3">
                       <img
                         class="card-img-top img-fluid"
                         src="img/card_img_1.jpg"
@@ -502,11 +424,14 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="card my-5 ml-3">
+                    <div class="card my-5 ml-md-3">
                       <img
                         class="card-img-top img-fluid"
                         src="img/card_img_1.jpg"
@@ -516,6 +441,7 @@
                       <button type="button" class="btn wishlist-btn">
                         <i class="far fa-heart text-center"></i>
                       </button>
+
                       <div class="card-body">
                         <a
                           href="product-page.html"
@@ -536,256 +462,343 @@
                           <img src="img/star_empty.svg" alt="" />
                         </span>
                         <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination--1"></div>
+                <div class="swiper-pagination"></div>
                 <!-- Add Pagination -->
-                <div class="swiper-button-next swiper-button-next--1"></div>
-                <div class="swiper-button-prev swiper-button-prev--1"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section-product-ratings u-section-padding">
-        <div class="container">
           <div class="row">
-            <div class="col-md-12 mb-5">
-              <h2 class="product-heading">Ratings and Reviews</h2>
-            </div>
-            <div class="col-md-6 ratings-block">
-              <span class="rating-txt">4</span>
-              <span class="product-review--star big-star">
-                <img src="img/star.svg" alt="star-rating" />
-                <img src="img/star.svg" alt="star-rating" />
-                <img src="img/star.svg" alt="star-rating" />
-                <img src="img/star.svg" alt="star-rating" />
-                <img src="img/star_empty.svg" alt="star-rating" />
-              </span>
+            <div class="col-md-12">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
 
-              <span class="review-txt">2130 Reviews</span>
-            </div>
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
 
-            <div class="col-md-4">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="ratings-tabs-star float-right">
-                    <span class="review-txt">5</span>
-                    <img
-                      class="pl-3 mb-1"
-                      style="height: 2rem"
-                      src="img/star.svg"
-                      alt="star-rating"
-                    />
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card my-5 ml-md-3">
+                      <img
+                        class="card-img-top img-fluid"
+                        src="img/card_img_1.jpg"
+                        alt="flowers"
+                      />
+
+                      <button type="button" class="btn wishlist-btn">
+                        <i class="far fa-heart text-center"></i>
+                      </button>
+
+                      <div class="card-body">
+                        <a
+                          href="product-page.html"
+                          type="button"
+                          class="btn cart-btn"
+                          >Buy Now</a
+                        >
+                        <h4 class="card-title">Retro Canvas Prints</h4>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque architecto id, fugiat maiores vitae.
+                        </p>
+                        <span class="card-rating">
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star.svg" alt="" />
+                          <img src="img/star_empty.svg" alt="" />
+                        </span>
+                        <p class="card-price">USD 10.99 &nbsp; <s>21.99</s></p>
+                        <span class="product-text--green font-weight-normal"
+                          ><i class="fa fa-truck"></i> FREE Delivery</span
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-8">
-                  <div
-                    style="height: 2rem; border-radius: 5rem"
-                    class="ratings-tabs-progress progress"
-                  >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 75%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-3">
-                  <div class="ratings-tabs-star float-right">
-                    <span class="review-txt">4</span>
-                    <img
-                      class="pl-3 mb-1"
-                      style="height: 2rem"
-                      src="img/star.svg"
-                      alt="star-rating"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    style="height: 2rem; border-radius: 5rem"
-                    class="ratings-tabs-progress progress"
-                  >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 45%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-3">
-                  <div class="ratings-tabs-star float-right">
-                    <span class="review-txt">3</span>
-                    <img
-                      class="pl-3 mb-1"
-                      style="height: 2rem"
-                      src="img/star.svg"
-                      alt="star-rating"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    style="height: 2rem; border-radius: 5rem"
-                    class="ratings-tabs-progress progress"
-                  >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 10%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-3">
-                  <div class="ratings-tabs-star float-right">
-                    <span class="review-txt">2</span>
-                    <img
-                      class="pl-3 mb-1"
-                      style="height: 2rem"
-                      src="img/star.svg"
-                      alt="star-rating"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    style="height: 2rem; border-radius: 5rem"
-                    class="ratings-tabs-progress progress"
-                  >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 5%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-md-3">
-                  <div class="ratings-tabs-star float-right">
-                    <span class="review-txt">1</span>
-                    <img
-                      class="pl-3 mb-1"
-                      style="height: 2rem"
-                      src="img/star.svg"
-                      alt="star-rating"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div
-                    style="height: 2rem; border-radius: 5rem"
-                    class="ratings-tabs-progress progress"
-                  >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 3%"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="section-product-comments u-section-padding">
-        <div class="swiper-container swiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="col-md-3 text-center review-txt">Anonymous</div>
-              <div class="col-md-6 py-5 text-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                odit temporibus consequuntur nostrum necessitatibus architecto
-                culpa alias eum aliquam incidunt laboriosam illo unde quia,
-                tenetur modi dolores magni eaque deleniti!
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="pr-4 btn btn-helpful">
-                  <i class="far fa-thumbs-up px-3"> </i> Helpful 3
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="col-md-3 text-center review-txt">Anonymous</div>
-              <div class="col-md-6 py-5 text-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                odit temporibus consequuntur nostrum necessitatibus architecto
-                culpa alias eum aliquam incidunt laboriosam illo unde quia,
-                tenetur modi dolores magni eaque deleniti!
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="pr-4 btn btn-helpful">
-                  <i class="far fa-thumbs-up px-3"> </i> Helpful 3
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="col-md-3 text-center review-txt">Anonymous</div>
-              <div class="col-md-6 py-5 text-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                odit temporibus consequuntur nostrum necessitatibus architecto
-                culpa alias eum aliquam incidunt laboriosam illo unde quia,
-                tenetur modi dolores magni eaque deleniti!
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="pr-4 btn btn-helpful">
-                  <i class="far fa-thumbs-up px-3"> </i> Helpful 3
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="col-md-3 text-center review-txt">Anonymous</div>
-              <div class="col-md-6 py-5 text-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                odit temporibus consequuntur nostrum necessitatibus architecto
-                culpa alias eum aliquam incidunt laboriosam illo unde quia,
-                tenetur modi dolores magni eaque deleniti!
-              </div>
-              <div class="col-md-3">
-                <button type="button" class="pr-4 btn btn-helpful">
-                  <i class="far fa-thumbs-up px-3"> </i> Helpful 3
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="mt-5 swiper-pagination swiper-pagination--2"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next swiper-button-next--2"></div>
-          <div class="swiper-button-prev swiper-button-prev--2"></div>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <!-- footer -->
+    <!-- START FOOTER -->
     <footer class="footer pt-5">
       <div class="container">
         <div class="row pt-3">
@@ -849,59 +862,58 @@
 
           <ul class="text-center m-auto terms">
             <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="privacy_policy.html">Privacy Policy</a></li>
             <li><a href="#">Security</a></li>
             <li><a href="#">Startup</a></li>
           </ul>
         </div>
       </div>
     </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      $('#navId a').click((e) => {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+    </script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.swiper1', {
+      var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
         // init: false,
         pagination: {
-          el: '.swiper-pagination--1',
+          el: '.swiper-pagination',
           clickable: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next--1',
-          prevEl: '.swiper-button-prev--1',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         breakpoints: {
           640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 3,
+            spaceBetween: 5,
           },
           768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
+            slidesPerView: 4,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 5,
+            spaceBetween: 20,
           },
         },
       });
     </script>
-    <script>
-      var swiper = new Swiper('.swiper2', {
-        pagination: {
-          el: '.swiper-pagination--2',
-          type: 'fraction',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next--2',
-          prevEl: '.swiper-button-prev--2',
-        },
-      });
-    </script>
+
+    <!-- Text Animation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 
     <!-- JavaScript -->
     <script
