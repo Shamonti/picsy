@@ -39,213 +39,81 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header-dashboard">
+
+      <div class=" bg-default--pink">
       <!-- Navbar-->
-      <nav id="nav--1" class="navbar navbar-expand-lg fixed-top bg-default">
-        <div class="container">
-          <a
-            href="index.html"
-            class="navbar-brand text-uppercase font-weight-bold"
-          >
-            <img src="img/logo.png" class="logo" alt="logo" />
-          </a>
-          <button
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler navbar-toggler-right"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+      <nav id="nav--1" class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">
+          <img src="img/logo.png" class="logo" alt="logo">
+        </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+              <i class="fas fa-bars"></i>
+            </button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
 
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li>
-                <div class="input-group" id="search-bar">
-                  <input
-                    type="hidden"
-                    name="search_param"
-                    value="all"
-                    id="search_param"
-                  />
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="x"
-                    placeholder="Find anything art..."
-                  />
-                  <span class="input-group-btn">
-                    <button class="btn-search" type="button">
-                      <i class="fas fa-search pr-2"></i>
-                    </button>
-                  </span>
-                </div>
-              </li>
-
-              <li class="nav-item active scroll">
-                <a
-                  href="index.html"
-                  class="nav-link text-uppercase font-weight-bold"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase font-weight-bold"
-                  >Buy Art</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="seller-dashboard.html"
-                  class="nav-link text-uppercase font-weight-bold"
-                  >Sell Art</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="login.html"
-                  class="nav-link text-uppercase font-weight-bold"
-                  >My Account</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  href="register.html"
-                  class="nav-link text-uppercase font-weight-bold"
-                  >Register</a
-                >
-              </li>
-              <li class="nav-item pl-3">
-                <a href="register.html" class="nav-icon"
-                  ><i class="fas fa-shopping-cart"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+                    <li class="nav-item active scroll">
+                      <a href="seller-dashboard.html" class="nav-link text-uppercase font-weight-bold text-white">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link text-white">Hello user@gmail.com!</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link text-white">
+                        <i class="fas fa-sign-out-alt pr-2"></i>
+                        Log out
+                      </a>
+                    </li>
+                </ul>
+            </div>
         </div>
       </nav>
-
-      <div class="fixed-top" id="nav--2">
-        <nav class="navbar navbar-expand-sm bg-default">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar2"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbar2">
-            <ul class="navbar-nav">
-              <li class="nav-item active scroll dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownMenuLink-1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Paintings &amp; Prints</a
-                >
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
-                  <a class="dropdown-item" href="#">Abstract</a>
-                  <a class="dropdown-item" href="#">Flowers, Plants, & Trees</a>
-                  <a class="dropdown-item" href="#">People & Figures</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownMenuLink-2"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Photography</a
-                >
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-2">
-                  <a class="dropdown-item" href="#">Abstract</a>
-                  <a class="dropdown-item" href="#">Children's Life</a>
-                  <a class="dropdown-item" href="#">Sports and Hobbies</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownMenuLink-3"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Drawing &amp; Illustration</a
-                >
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-3">
-                  <a class="dropdown-item" href="#">Abstract</a>
-                  <a class="dropdown-item" href="#">Flowers, Plants, & Trees</a>
-                  <a class="dropdown-item" href="#">People & Figures</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownMenuLink-4"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Digital Art</a
-                >
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-4">
-                  <a class="dropdown-item" href="#">Abstract</a>
-                  <a class="dropdown-item" href="#">Flowers, Plants, & Trees</a>
-                  <a class="dropdown-item" href="#">People & Figures</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="dropdownMenuLink-5"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Sculptures</a
-                >
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink-5">
-                  <a class="dropdown-item" href="#">Abstract</a>
-                  <a class="dropdown-item" href="#">Flowers, Plants, & Trees</a>
-                  <a class="dropdown-item" href="#">People & Figures</a>
-                </div>
-              </li>
-            </ul>
+      <div class="container u-padding-top section-dashboard-top">
+        <div class="row pt-5">
+          <div class="col-md-6 text-center border-right mb-5">
+            <h1 class="text-white">Artist Dashboard</h1>
           </div>
-        </nav>
+          <div class="col-md-6 text-white pl-5 pb-5">
+            <h2 class="text-uppercase  pl-5">You are here:</h2>
+            <br>
+            <p class="text-white  pl-5"> <a href="#"> Dashboard </a><i class="fas fa-angle-double-right px-3"></i> <a href="#"> Print Art Status</a></p>
+          </div>
+          </div>
       </div>
+      
+      </div>
+      
     </header>
 
     <main>
       <section
-        class="section-product-details u-margin-top-large u-section-padding"
+        class="section-canvas-details u-section-padding"
       >
         <div class="container">
           <div class="row">
-            <div class="col-md-6 pr-md-5 product-image">
-              <img class="img-fluid" src="img/card_img_1.jpg" alt="flowers" />
+            <div class="col-md-7 pr-md-5 ">
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--1.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--2.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--3.jpg)"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--1.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--2.jpg)"></div>
+                  <div class="swiper-slide" style="background-image:url(../img/canvas--3.jpg)"></div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6 pl-md-5 pt-5 pt-md-0">
-              <h1 class="product-title">Product Title</h1>
-              <p class="product-text">
-                See More by
-                <a class="links" href="artist_details.html">Artist</a>
-              </p>
+            <div class="col-md-5 pl-md-5 pt-md-0 my-5">
+              <h1 class="product-title">Canvas Print</h1>
 
               <div class="product-review">
                 <span class="product-review--star">
@@ -259,7 +127,7 @@
                 <span class="product-review--num"> 2130 Reviews </span>
               </div>
 
-              <p class="product-price">USD 10.99 &nbsp; <s>21.99</s></p>
+              <p class="product-price">£7.20 &nbsp; <s>10.99</s></p>
 
               <div class="delivery-block">
                 <p class="product-text">
@@ -271,54 +139,54 @@
                 </p>
               </div>
 
-              <div class="select-size py-4">
-                <h3 class="pb-2">Select Size</h3>
-                <div class="row">
-                  <div class="col-md-12">
-                    <button type="button" class="btn btn-size mr-3">
-                      Small
-                    </button>
-                    <button type="button" class="btn btn-size mr-3">
-                      Medium
-                    </button>
-                    <button type="button" class="btn btn-size">Large</button>
-                  </div>
-                </div>
+              <div class="canvas-features m-4 text-dark" style="font-weight: 400;">
+                <ul>
+                  <li>Great print quality</li>
+                  <li>75 years colour guarantee</li>
+                  <li>3 cm thick frame</li>
+                  <li>Lowest price guarantee</li>
+                  <li>Free hanging kit</li>
+                </ul>
+              </div>
+                
+              <div class="canvas-size w-90 mt-5">
+                <select class="size-dropdown">
+                  <option value="1">
+                    <span class="size">20 x 20 cm</span> &nbsp;
+                    <div>
+                      <span class="price action">£7.20</span>
+                    </div>
+                  </option>
+                  <option value="2">
+                    <span class="size">20 x 30 cm</span> &nbsp;
+                    <div>
+                      <span class="price action">£9.60</span>
+                    </div>
+                  </option>
+                  <option value="3">
+                    <span class="size">30 x 30 cm</span> &nbsp;
+                    <div>
+                      <span class="price action">£14.40</span>
+                    </div>
+                  </option>
+                  <option value="4">
+                    <span class="size">30 x 40 cm</span> &nbsp;
+                    <div>
+                      <span class="price action">£16</span>
+                    </div>
+                  </option>
+                  <option value="5">
+                    <span class="size">40 x 40 cm</span> &nbsp;
+                    <div>
+                      <span class="price action">£18.40</span>
+                    </div>
+                  </option>
+                </select>
               </div>
 
-              <div class="row add-product mt-3 mb-5">
-                <div class="col-md-12">
-                  <div class="product-number input-group mr-3">
-                    <select class="custom-select mr-0" id="inputGroupSelect01">
-                      <option selected>1</option>
-                      <option value="1">2</option>
-                      <option value="2">3</option>
-                      <option value="3">4</option>
-                      <option value="3">5</option>
-                    </select>
-                  </div>
-
-                  <button type="button" class="btn wishlist-btn mr-3">
-                    <i class="far fa-heart text-center"></i>
-                  </button>
-
-                  <button type="button" class="btn btn-solid btn-solid--round">
-                    Add to Basket
-                  </button>
-                </div>
-              </div>
-
-              <h2 class="product-heading py-3">Description</h2>
-
-              <p class="product-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                eius natus in labore omnis provident fugiat corporis, dolorem
-                ex. Commodi officia, voluptatibus architecto corporis facere
-                necessitatibus eos facilis beatae qui.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Itaque eius natus in labore omnis
-                provident fugiat corporis, dolorem ex. Commodi officia,
-                voluptatibus architecto eos facilis beatae qui.
-              </p>
+              <button type="button" class="btn btn-solid btn-solid--square mt-5">
+                <h3 class="pt-2 text-uppercase px-3">Order now with 20% discount &nbsp;<i class="fas fa-chevron-right"></i></h3>
+              </button>
             </div>
           </div>
         </div>
@@ -342,7 +210,30 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    
+    <script>
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: true,
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: galleryThumbs,
+        },
+      });
+    </script>
+
 
     <!-- JavaScript -->
     <script

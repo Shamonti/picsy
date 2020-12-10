@@ -1,0 +1,23 @@
+.section-canvas-details {
+  .canvas-size {
+      .selected {
+        font-weight: 900 !important;
+      }
+      .normal-price {
+        text-decoration: line-through !important;
+      }
+      .size-dropdown {
+        background-color: $color-grey-light;
+        border: 1px solid $color-grey-dark;
+        border-radius: 5px;
+        padding: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+}
+  .btn-solid {
+    background-color: $color-pink !important;
+  }
+}
