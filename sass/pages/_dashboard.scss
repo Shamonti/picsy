@@ -171,6 +171,13 @@
     background-size: cover;
     background-position: center;
 
+    table thead th {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      background-color: $color-text;
+      color: $color-white;
+    }
+
     .modal {
       &-header {
         border-bottom: 1px solid $color-text;
