@@ -2066,13 +2066,32 @@ button:focus {
   background-color: #f83365 !important;
 }
 
-.section-canvas-details--step01 h4 {
+.section-canvas-details--step01 h4, .section-canvas-details--step01 h3 {
   font-weight: 700;
   color: #090d36;
 }
 
 .section-canvas-details--step01 button {
-  width: 16rem;
+  width: 14.85rem;
+}
+
+.section-canvas-details--step01 .docs-buttons .btn:hover, .section-canvas-details--step01 .floating-frames .btn:hover {
+  -webkit-transform: none !important;
+          transform: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-canvas-details--step01 .docs-buttons .btn:hover::after, .section-canvas-details--step01 .floating-frames .btn:hover::after {
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.section-canvas-details--step01 .docs-buttons .card:hover, .section-canvas-details--step01 .floating-frames .card:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .section-dashboard-top h1 {
