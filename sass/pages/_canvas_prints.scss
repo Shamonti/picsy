@@ -20,4 +20,14 @@
   .btn-solid {
     background-color: $color-pink !important;
   }
+
+  &--step01 {
+    h4 {
+      font-weight: 700;
+      color: $color-text;
+    }
+    button {
+      width: 16rem;
+    }
+  }
 }
