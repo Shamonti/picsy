@@ -2655,6 +2655,26 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .payment-method {
+    height: 8rem !important;
+    position: relative;
+    width: 12rem !important;
+    left: 15% !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  /*Tablets*/
+  .payment-method {
+    height: 8rem;
+    position: relative;
+    width: 12rem;
+    left: 28% !important;
+  }
+}
+
 .section-dashboard-top h1 {
   font-weight: 600;
   font-size: 4.8rem;
