@@ -86,95 +86,80 @@
   </header>
 
   <main>
-    <section class="section-canvas-details--step02 u-section-padding">
+    <section class="section-canvas-details--step03 u-section-padding">
       <div class="container">
-        <div class="row">
+        <div class="row py-5 mb-5">
           <div class="col-md-5">
-            <form class="form-card">
-              <fieldset class="form-fieldset">
-                <h2 class="text-blue font-weight-bold">Order Contact</h2>
-
-                <div class="form-radio form-check form-check-inline mb-0 mt-2">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1">
-                  <label class="form-check-label" for="inlineRadio1">Ms.</label>
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="text-blue pb-4">Invoice address
+                  <a href="canvas_step02.html"><i class="fas fa-pencil-alt text-blue"></i>
+                  </a>                  
+                </h2>
+                <span>
+                  Zak S Jones
+                </span>
+                <span>
+                  37 Caerfai Bay Road
+                </span>
+                <span>
+                  TEMPLEWOOD DD9 0AF
+                </span>
+                <span>
+                  United Kingdom
+                </span>
+                <span>
+                  ry50e8bwy6@temporary-mail.net
+                </span>
+                <span>
+                  079 6382 9754
+                </span>
+              </div>
+              <div class="col-md-6 pl-5">
+                <h2 class="text-blue pb-4">Delivery address
+                  <a href="canvas_step02.html"><i class="fas fa-pencil-alt text-blue"></i>
+                  </a>                  
+                </h2>
+                <span>
+                  Zak S Jones
+                </span>
+                <span>
+                  37 Caerfai Bay Road
+                </span>
+                <span>
+                  TEMPLEWOOD DD9 0AF
+                </span>
+                <span>
+                  United Kingdom
+                </span>
+              </div>
+            </div>
+            <div class="row pt-5 mt-3">
+              <div class="col-md-12">
+                <h2 class="text-blue">Choose your shipping method</h2>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="shipping_method" id="shipping_method01" value="shipping_method01" style="margin-top: 0.6rem;" checked>
+                    <span class="ml-2">Standard £4.95</span>
+                  </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
-                  <label class="form-check-label" for="inlineRadio2">Mrs.</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="shipping_method" id="shipping_method02" value="shipping_method02" style="margin-top: 0.6rem;">
+                    <span class="ml-2">Express £24.95</span>
+                  </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3">
-                  <label class="form-check-label" for="inlineRadio3">Mr.</label>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="shipping_method" id="shipping_method03" value="shipping_method03" style="margin-top: 0.6rem;">
+                    <span class="ml-2">Priority £17.95</span>
+                  </label>
                 </div>
-
-                <div class="form-element form-input">
-                  <input id="name" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="name">Your Full Name</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="company_name" class="form-element-field" placeholder=" " type="input" />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="company_name">Company Name or C/O</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="phone_number" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="phone_number">Phone Number</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="email" class="form-element-field" placeholder=" " type="email" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="email">Email</label>
-                </div>
-
-
-                <h2 class="text-blue font-weight-bold mt-5 pt-3">Shipping Address</h2>
-
-                <div class="form-element form-select">
-                  <select id="country" class="form-element-field">
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Guernsey">Guernsey</option>
-                    <option value="Jersey">Jersey</option>
-                  </select>
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="country">Choose your country</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="state" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="state">State/Province/Region</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="city" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="city">City</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="zip" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="zip">ZIP/Postal Code</label>
-                </div>
-
-                <div class="form-element form-input">
-                  <input id="street" class="form-element-field" placeholder=" " type="input" required />
-                  <div class="form-element-bar"></div>
-                  <label class="form-element-label" for="street">Street</label>
-                </div>
-              </fieldset>
-            </form>
+              </div>
+            </div>
           </div>
 
-          <div class="col-md-7 pt-5">
+          <div class="col-md-7 pl-5">
             <div class="row">
               <div class="col-md-12">
                 <h2 class="text-blue font-weight-bold">Shopping Basket</h2>
@@ -234,14 +219,14 @@
 
         <div class="row mt-5 pt-5 mx-auto">
           <div class="col-md-3 col-4">
-            <a href="canvas_step01.html">
+            <a href="canvas_step02.html">
               <button type="button" class="btn btn-solid btn-solid--square p-3 px-5"> <i
                   class="fas fa-chevron-left"></i>
                 &nbsp; Previous</button>
             </a>
           </div>
           <div class="offset-md-6 col-md-3 offset-2 col-4 text-lg-center">
-            <a href="canvas_step03.html">
+            <a href="canvas_step04.html">
               <button type="button" class="btn btn-solid btn-solid--square p-3 px-5">Next &nbsp;
                 <i class="fas fa-chevron-right"></i></button>
             </a>
