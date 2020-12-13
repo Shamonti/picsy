@@ -1,0 +1,182 @@
+#container {
+  display: table;
+  width: 80vw;
+  background: #424242;
+  margin: 60px auto;
+  border-radius: 4px;
+}
+
+.menu {
+  list-style: none;
+  margin:  24px 0;
+  padding: 0;
+}
+.menu li {
+  display: block;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .6);
+  position: relative;
+}
+.menu li:hover {
+  color: #239ae3;
+}
+.menu li:first-child {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.addCategory {
+  font-size: 13px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .2);
+}
+.addCategory:hover {
+  color: #fff;
+}
+
+/* Content */
+#content {
+  width: calc(100% - 240px);
+  height: 100%;
+  padding: 25px;
+  display: table-cell;
+}
+.controls {
+  display: block;
+  width: 70px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  float: right;
+  border-radius: 20px;
+}
+.activeControl {
+  background: rgba(255, 255, 255, 0.9);
+  color: #202b33;
+  font-weight: 600;
+}
+#salesData {
+  margin-bottom: 60px;
+}
+#totalSales {
+  height: 120px;
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 50px;
+}
+#totalSales .col {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+#totalSales .col .progressTitle {
+  float: left;
+  margin-left: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+.progressBar {
+  float: left;
+  height: 10rem;
+  width: 10rem;
+  font-size: 40px;
+  text-align: center;
+  line-height: 10rem;
+}
+.progressbar-text {
+  font-size: 3.5rem;
+}
+
+/* Icons */
+.notification {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #202b33;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .6);
+  position: absolute;
+  top: 0; bottom: 0; right: 2%;
+  margin: auto;
+}
+.colorIcon {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; bottom: 0; right: 2%;
+  margin: auto;
+}
+.plus {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #202b33;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 8px;
+  padding: 4px;
+  margin-right: 6px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, .2);
+}
+.red {
+  background: #ec1561;
+}
+.orange {
+  background: #ff9939;
+}
+.green {
+  background: #2bab51;
+}
+
+.clearFix {
+  clear: both;
+}
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  #container {
+    display: table;
+    width: 98vw;
+    background: #424242;
+    margin: 3rem auto;
+    border-radius: 4px;
+  }
+  #salesData {
+    margin-bottom: 0px !important;
+  }
+  .progressBar {
+    float: left;
+    height: 6rem;
+    width: 6rem;
+    font-size: 40px;
+    text-align: center;
+    line-height: 6rem;
+  }
+  .progressbar-text {
+    font-size: 2.2rem;
+  }
+  h1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px){
+  /*Tablets*/
+}

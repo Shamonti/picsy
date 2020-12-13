@@ -3,6 +3,10 @@
     font-weight: 600;
     font-size: 4.8rem;
   }
+  .dashboard-title {
+    font-weight: 600;
+    font-size: 4rem;
+  }
 }
 
 .section-dashboard {  
@@ -170,6 +174,12 @@
     background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/banner--1.jpg");
     background-size: cover;
     background-position: center;
+  }
+
+  &--print-status, &--sales-report{
+    table {
+      color: $color-white;
+    }
 
     table thead th {
       padding-top: 1.5rem;
@@ -190,7 +200,6 @@
         font-size: 2.5rem;
       }
     }
-    
   }
 
   .btn-go-back {
@@ -210,11 +219,12 @@
   }
 
   .table-default {
-    background-color: rgba($color-grey-light,  .80);
+    background-color: rgba(69, 90, 100,  .7);
   }
   
   .table-hover tbody tr:hover {
     background-color: rgba($color-primary-dark,.2);
+    color: $color-white;
   }
 }
 
