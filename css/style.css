@@ -2010,8 +2010,9 @@ button:focus {
 }
 
 .section-dashboard .mobile-img {
-  height: 60rem;
+  height: 55rem;
   width: 100%;
+  padding: 0 6rem 0 4.5rem;
 }
 
 .section-dashboard_numbers {
@@ -2297,7 +2298,7 @@ button:focus {
 
 .app-dot-line > .dot .line {
   top: 7px;
-  width: 24rem;
+  width: 22rem;
   height: 1px;
   z-index: -1;
 }
