@@ -164,6 +164,7 @@
     background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/sales_report-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     table {
       text-align: center;
