@@ -2326,6 +2326,17 @@ button:focus {
           box-shadow: none;
 }
 
+@media only screen and (max-width: 575px) {
+  /*Mobile Phones*/
+  .help-btn {
+    float: right;
+    width: 12rem !important;
+  }
+  .mobile-img {
+    height: 35rem !important;
+  }
+}
+
 .bg-light-purple {
   background-color: rgba(243, 229, 245, 0.7);
 }

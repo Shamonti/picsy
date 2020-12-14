@@ -268,7 +268,7 @@
   left: -15rem;
   top: 5rem;
   transform: rotate(30deg); 
-  
+
   &--middle{
     transform: rotate(40deg);
   }
@@ -359,3 +359,18 @@
 .page-link:focus {
   box-shadow: none;
 }
+
+@media only screen and (max-width: 575px){
+  /*Mobile Phones*/
+  .help-btn {
+    float: right;
+    width: 12rem !important;
+  }
+  .mobile-img {
+    height: 35rem !important;
+  }
+}
+
+// @media only screen and (min-width: 576px) and (max-width: 991px){
+//   /*Tablets*/
+// }
