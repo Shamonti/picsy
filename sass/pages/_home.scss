@@ -1,4 +1,12 @@
+.bg-light-purple {
+  background-color: rgba(243, 229, 245, .7);
+}
+
 .section-features {
+  .animate__animated.animate__fadeInLeft {
+    --animate-duration: 1.5s;
+  }
+
   .nav-pills .nav-link{
     font-size: 2rem;
     background-color: transparent;

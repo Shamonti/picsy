@@ -756,6 +756,11 @@ footer {
   }
 }
 
+.section-buyer_dashboard .carousel-item {
+  height: 65vh !important;
+  margin-top: 5rem;
+}
+
 .carousel-item {
   height: 90vh;
   min-height: 35rem;
@@ -949,6 +954,7 @@ footer {
 .nav-link {
   color: #FFFFFF;
   font-weight: 700;
+  font-size: 2rem;
   padding: 0 2.2rem !important;
   position: relative;
 }
@@ -1079,7 +1085,7 @@ button:focus {
 }
 
 .logo {
-  height: 8rem;
+  height: 9.5rem;
 }
 
 @media only screen and (max-width: 575px) {
@@ -2004,7 +2010,7 @@ button:focus {
 }
 
 .section-dashboard .mobile-img {
-  height: 55rem;
+  height: 60rem;
   width: 100%;
 }
 
@@ -2291,7 +2297,7 @@ button:focus {
 
 .app-dot-line > .dot .line {
   top: 7px;
-  width: 300px;
+  width: 24rem;
   height: 1px;
   z-index: -1;
 }
@@ -2309,6 +2315,14 @@ button:focus {
 .page-link:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.bg-light-purple {
+  background-color: rgba(243, 229, 245, 0.7);
+}
+
+.section-features .animate__animated.animate__fadeInLeft {
+  --animate-duration: 1.5s;
 }
 
 .section-features .nav-pills .nav-link {
