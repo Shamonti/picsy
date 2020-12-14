@@ -41,7 +41,7 @@
   }
 
   &_heading-main {
-    font-size: 10rem;
+    font-size: 8rem;
     color: rgba($color-white, .85);
     position: relative;
   }
@@ -56,7 +56,7 @@
   }
 
   &--delete-art {
-    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/delete-art_bg.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -76,9 +76,9 @@
       font-weight: bold;
     }
 
-    span {
-      color: $color-black;
-    }
+    // span {
+    //   color: $color-black;
+    // }
 
     input, textarea {
       padding: 1.8rem;
@@ -106,17 +106,17 @@
   #input-price {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid $color-text;
+    border-bottom: 1px solid $color-white;
     border-radius: 0px;
     padding: 0;
     margin-bottom: 1.2rem;
-    color: $color-text;
+    color: $color-white;
     text-align: center;
   }
   }
 
   &--digitize-art {
-    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/digitize-art_bg.jpg");
     background-size: cover;
     background-position: center;
 
@@ -177,7 +177,7 @@
     background-position: center;
   }
 
-  &--print-status, &--sales-report{
+  &--print-status, &--sales-report, &--delete-art{
     table {
       color: $color-white;
     }
