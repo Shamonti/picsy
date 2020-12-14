@@ -944,6 +944,10 @@ footer {
   height: 12rem;
 }
 
+.header-dashboard .logo img {
+  height: 2rem !important;
+}
+
 .navbar {
   font-size: 1.8rem;
   -webkit-transition: all 0.4s;
@@ -2010,9 +2014,8 @@ button:focus {
 }
 
 .section-dashboard .mobile-img {
-  height: 55rem;
+  height: 70rem;
   width: 100%;
-  padding: 0 6rem 0 4.5rem;
 }
 
 .section-dashboard_numbers {
