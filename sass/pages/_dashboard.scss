@@ -241,45 +241,94 @@
 .app-dot-line.left > .dot {
     right: -40px
 }
-[dir=rtl] .app-dot-line.left > .dot {
-    right: auto;
-    left: -40px
+
+.app-dot-line > .paint-brush {
+  display: none;
 }
-.app-dot-line.left > .dot > .line {
-    left: 0
+
+.app-dot-line.left > .paint-brush {
+  position: absolute;
+  right: -15rem;
+  top: 4rem;
+  width: 55rem !important;
+  transform: rotate(-120deg); 
+  
+  &--middle{
+    transform: rotate(-130deg);
+  }
+
+  &--upwards{
+    top: 3rem;
+    transform: rotate(-150deg);
+  }
 }
-.app-dot-line.right > .dot {
-    left: -40px
+
+.app-dot-line.right > .paint-brush {
+  position: absolute;
+  left: -15rem;
+  top: 5rem;
+  transform: rotate(30deg); 
+  
+  &--middle{
+    transform: rotate(40deg);
+  }
+
+  &--upwards{
+    top: 3rem;
+    transform: rotate(60deg);
+  }
 }
-[dir=rtl] .app-dot-line.right > .dot {
-    left: auto;
-    right: -40px
+[dir=rtl] .app-dot-line.right > .paint-brush {
+  left: auto;
+  right: -40px;
 }
-.app-dot-line.right > .dot > .line {
-    right: 0
-}
-[dir=rtl] .app-dot-line.right > .dot > .line {
-    right: auto;
-    left: 0
-}
-.app-dot-line > .dot,
-.app-dot-line > .dot .line {
-    position: absolute;
-    background: $color-pink;
-}
-.app-dot-line > .dot {
-    display: none;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    border-radius: 50%;
-    top: 50%;
-    width: 14px;
-    height: 14px
-}
+
+
+
+// [dir=rtl] .app-dot-line.left > .dot {
+//     right: auto;
+//     left: -40px
+// }
+
+// .app-dot-line.left > .dot > .line {
+//     left: 0
+// }
+// .app-dot-line.right > .dot {
+//     left: -40px
+// }
+// [dir=rtl] .app-dot-line.right > .dot {
+//     left: auto;
+//     right: -40px
+// }
+// .app-dot-line.right > .dot > .line {
+//     right: 0
+// }
+// [dir=rtl] .app-dot-line.right > .dot > .line {
+//     right: auto;
+//     left: 0
+// }
+// .app-dot-line > .dot,
+// .app-dot-line > .dot .line {
+//     position: absolute;
+//     background: $color-pink;
+// }
+// .app-dot-line > .dot {
+//     display: none;
+//     -webkit-transform: translate(0, -50%);
+//     transform: translate(0, -50%);
+//     border-radius: 50%;
+//     top: 50%;
+//     width: 14px;
+//     height: 14px
+// }
 @media (min-width:1230px) {
-    .app-dot-line > .dot {
-        display: block
+    // .app-dot-line > .dot {
+    //     display: block
+    // }
+    .app-dot-line > .paint-brush {
+      display: block;
     }
+    
 }
 .app-dot-line > .dot:after {
     content: '';
