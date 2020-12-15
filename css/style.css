@@ -2060,6 +2060,38 @@ button:focus {
   background-position: center;
 }
 
+.section-dashboard--upload-art .pricing h2 button {
+  font-size: 2rem !important;
+}
+
+.section-dashboard--upload-art .pricing table tr {
+  cursor: pointer !important;
+}
+
+.section-dashboard--upload-art .pricing .card-header {
+  border-bottom: none;
+}
+
+.section-dashboard--upload-art .pricing .btn:hover {
+  color: #090d36;
+  -webkit-transform: none !important;
+          transform: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-dashboard--upload-art .pricing .btn:hover::after {
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+.section-dashboard--upload-art .pricing .card:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .section-dashboard--upload-art, .section-dashboard--digitize-art {
   font-weight: 600;
   font-size: 1.8rem;
@@ -2173,26 +2205,26 @@ button:focus {
   background-position: center;
 }
 
-.section-dashboard--print-status table, .section-dashboard--sales-report table, .section-dashboard--delete-art table {
+.section-dashboard--print-status table, .section-dashboard--sales-report table, .section-dashboard--delete-art table, .section-dashboard--upload-art table {
   color: #FFFFFF;
 }
 
-.section-dashboard--print-status table thead th, .section-dashboard--sales-report table thead th, .section-dashboard--delete-art table thead th {
+.section-dashboard--print-status table thead th, .section-dashboard--sales-report table thead th, .section-dashboard--delete-art table thead th, .section-dashboard--upload-art table thead th {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #090d36;
   color: #FFFFFF;
 }
 
-.section-dashboard--print-status .modal-header, .section-dashboard--sales-report .modal-header, .section-dashboard--delete-art .modal-header {
+.section-dashboard--print-status .modal-header, .section-dashboard--sales-report .modal-header, .section-dashboard--delete-art .modal-header, .section-dashboard--upload-art .modal-header {
   border-bottom: 1px solid #090d36;
 }
 
-.section-dashboard--print-status .modal-content, .section-dashboard--sales-report .modal-content, .section-dashboard--delete-art .modal-content {
+.section-dashboard--print-status .modal-content, .section-dashboard--sales-report .modal-content, .section-dashboard--delete-art .modal-content, .section-dashboard--upload-art .modal-content {
   background-color: rgba(205, 159, 250, 0.65);
 }
 
-.section-dashboard--print-status .modal .close, .section-dashboard--sales-report .modal .close, .section-dashboard--delete-art .modal .close {
+.section-dashboard--print-status .modal .close, .section-dashboard--sales-report .modal .close, .section-dashboard--delete-art .modal .close, .section-dashboard--upload-art .modal .close {
   color: #F34541;
   font-size: 2.5rem;
 }

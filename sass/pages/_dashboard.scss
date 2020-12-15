@@ -65,6 +65,37 @@
     background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.jpg");
     background-size: cover;
     background-position: center;
+
+    .pricing {
+      h2 button{
+        font-size: 2rem !important;
+      }
+      table tr {
+        cursor: pointer !important;
+      }
+      .card-header {
+        border-bottom: none;
+      }
+      .btn {
+        &:hover {
+          color: $color-text;
+          transform: none !important;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+  
+          &::after {
+            transform: none !important;
+        }
+        }
+      }
+
+      .card {
+        &:hover {
+          transform: none;          
+          box-shadow: none;
+        }
+      }
+    }
   }
   
   &--upload-art, &--digitize-art {
@@ -177,7 +208,7 @@
     background-position: center;
   }
 
-  &--print-status, &--sales-report, &--delete-art{
+  &--print-status, &--sales-report, &--delete-art, &--upload-art{
     table {
       color: $color-white;
     }
