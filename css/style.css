@@ -1998,7 +1998,7 @@ button:focus {
 
 .section-dashboard-top .dashboard-title {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .section-dashboard a,
@@ -2603,7 +2603,11 @@ button:focus {
 }
 
 .section-dashboard .table-default {
-  background-color: rgba(69, 90, 100, 0.7);
+  background-color: rgba(57, 73, 171, 0.7);
+}
+
+.section-dashboard .table-default--light {
+  background-color: rgba(57, 73, 171, 0.2);
 }
 
 .section-dashboard .table-hover tbody tr:hover {

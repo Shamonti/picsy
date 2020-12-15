@@ -36,7 +36,6 @@
     <div class="bg-default--blue">
       <!-- Navbar-->
       <nav id="nav--1" class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
           <a href="index.html" class="navbar-brand text-uppercase font-weight-bold">
             <img src="img/logo.png" class="logo" alt="logo" />
           </a>
@@ -63,11 +62,10 @@
               </li>
             </ul>
           </div>
-        </div>
       </nav>
       <div class="container u-padding-top section-dashboard-top">
         <div class="row pt-5">
-          <div class="col-md-6 text-center border-right mb-5">
+          <div class="col-md-5 text-left border-right mb-5 pl-5 ml-4">
             <h2 class="text-white dashboard-title">Artist Dashboard</h2>
           </div>
           <div class="col-md-6 text-white pl-5 pb-5">
@@ -169,7 +167,7 @@
                       not had experience selling there images before.
                     </p>
                     <form action="">
-                      <table class="table table-default table-hover table-borderless">
+                      <table class="table table-default--light table-hover table-borderless">
                         <thead>
                           <tr>
                             <th style="width: 8%; text-align: center;" scope="col"></th>
@@ -826,10 +824,11 @@
                       <table class="table table-default table-hover table-borderless">
                         <thead>
                           <tr>
-                            <th style="width: 8%; text-align: center;" scope="col"></th>
-                            <th style="width: 15%; text-align: center;" scope="col">CM</th>
-                            <th style="width: 15%; text-align: center;" scope="col">Inch</th>
-                            <th style="width: 5%; text-align: center;" scope="col">Retail Price Bottom</th>
+                            <th style="width: 6%; text-align: center;" scope="col"></th>
+                            <th style="width: 10%; text-align: center;" scope="col">CM</th>
+                            <th style="width: 10%; text-align: center;" scope="col">Inch</th>
+                            <th style="width: 20%; text-align: center;" scope="col">Retail Price Bottom</th>
+                            <th style="width: 18%; text-align: center;" scope="col">Artist Royalties</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -840,7 +839,7 @@
                               16X12
                             </td>
                             <td>
-                              <input type="number" id="" name="custom_price" min="40">
+                              <input type="number" id="" name="custom_price" min="40" required>
                             </td>
                           </tr>
                           <tr style="text-align: center;">
@@ -849,7 +848,7 @@
                             <td>
                               16X16
                             </td>                          
-                            <td><input type="number" id="" name="custom_price" min="46"></td>
+                            <td><input type="number" id="" name="custom_price" min="46" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="3"></td>
@@ -858,7 +857,7 @@
                               20X20
                             </td>
                             <td>
-                              <input type="number" id="" name="custom_price" min="48">
+                              <input type="number" id="" name="custom_price" min="48" required>
                             </td>
                           </tr>
                           <tr style="text-align: center;">
@@ -867,7 +866,7 @@
                             <td>
                               24X16
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="56"></td>
+                            <td><input type="number" id="" name="custom_price" min="56" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="5"></td>
@@ -875,7 +874,7 @@
                             <td>
                               24X24
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="62"></td>
+                            <td><input type="number" id="" name="custom_price" min="62" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="6"></td>
@@ -883,7 +882,7 @@
                             <td>
                               28X20
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="75"></td>
+                            <td><input type="number" id="" name="custom_price" min="75" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="7"></td>
@@ -891,7 +890,7 @@
                             <td>
                               31X16
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="78"></td>
+                            <td><input type="number" id="" name="custom_price" min="78" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="8"></td>
@@ -899,7 +898,7 @@
                             <td>
                               28X28
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="84"></td>
+                            <td><input type="number" id="" name="custom_price" min="84" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="9"></td>
@@ -907,7 +906,7 @@
                             <td>
                               31X24
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="86"></td>
+                            <td><input type="number" id="" name="custom_price" min="86" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="10"></td>
@@ -915,7 +914,7 @@
                             <td>
                               31X31
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="88"></td>
+                            <td><input type="number" id="" name="custom_price" min="88" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="11"></td>
@@ -923,7 +922,7 @@
                             <td>
                               35X24
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="89"></td>
+                            <td><input type="number" id="" name="custom_price" min="89" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="12"></td>
@@ -931,7 +930,7 @@
                             <td>
                               39X12
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="94"></td>
+                            <td><input type="number" id="" name="custom_price" min="94" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="13"></td>
@@ -939,7 +938,7 @@
                             <td>
                               39X20
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="96"></td>
+                            <td><input type="number" id="" name="custom_price" min="96" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="14"></td>
@@ -947,7 +946,7 @@
                             <td>
                               39X28
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="99"></td>
+                            <td><input type="number" id="" name="custom_price" min="99" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="15"></td>
@@ -955,7 +954,7 @@
                             <td>
                               47X24
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="104"></td>
+                            <td><input type="number" id="" name="custom_price" min="104" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="16"></td>
@@ -963,7 +962,7 @@
                             <td>
                               47X31
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="132"></td>
+                            <td><input type="number" id="" name="custom_price" min="132" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="17"></td>
@@ -971,7 +970,7 @@
                             <td>
                               55X20
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="146"></td>
+                            <td><input type="number" id="" name="custom_price" min="146" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="18"></td>
@@ -979,7 +978,7 @@
                             <td>
                               55X28
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="168"></td>
+                            <td><input type="number" id="" name="custom_price" min="168" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="19"></td>
@@ -987,7 +986,7 @@
                             <td>
                               55X35
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="172"></td>
+                            <td><input type="number" id="" name="custom_price" min="172" required></td>
                           </tr>
                           <tr style="text-align: center;">
                             <td><input type="radio" name="custom_price" value="20"></td>
@@ -995,7 +994,7 @@
                             <td>
                               39X28
                             </td>
-                            <td><input type="number" id="" name="custom_price" min="109"></td>
+                            <td><input type="number" id="" name="custom_price" min="109" required></td>
                           </tr>
                         </tbody>
                       </table>

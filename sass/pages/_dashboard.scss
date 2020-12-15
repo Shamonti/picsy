@@ -6,7 +6,7 @@
 
   .dashboard-title {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -573,7 +573,10 @@
   }
 
   .table-default {
-    background-color: rgba(69, 90, 100, .7);
+    background-color: rgba(57, 73, 171, .7);
+    &--light {
+      background-color: rgba(57, 73, 171, .2);
+    }
   }
 
   .table-hover tbody tr:hover {
