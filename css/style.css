@@ -2001,7 +2001,8 @@ button:focus {
   font-size: 4rem;
 }
 
-.section-dashboard a, .section-dashboard span {
+.section-dashboard a,
+.section-dashboard span {
   color: #090d36;
 }
 
@@ -2097,7 +2098,8 @@ button:focus {
   font-size: 1.6rem !important;
 }
 
-.section-dashboard--help form .form-radio-label span, .section-dashboard--help form .form-checkbox-label span {
+.section-dashboard--help form .form-radio-label span,
+.section-dashboard--help form .form-checkbox-label span {
   margin-top: -5px;
 }
 
@@ -2115,40 +2117,6 @@ button:focus {
 
 .section-dashboard--help form ::placeholder {
   font-size: 1.4rem;
-}
-
-.section-dashboard--help .form-radio-button::before,
-.section-dashboard--help .form-radio-button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0.25rem;
-  width: 1rem;
-  height: 1rem;
-  -webkit-transition: color 0.28s ease, -webkit-transform 0.28s ease;
-  transition: color 0.28s ease, -webkit-transform 0.28s ease;
-  transition: transform 0.28s ease, color 0.28s ease;
-  transition: transform 0.28s ease, color 0.28s ease, -webkit-transform 0.28s ease;
-  border-radius: 50%;
-  border: 0.125rem solid currentColor;
-  will-change: transform, color;
-}
-
-.section-dashboard--help .form-radio-button::after {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  background-color: #337ab7;
-  border-color: #337ab7;
-}
-
-.section-dashboard--help .form-radio-field:checked ~ .form-radio-button::after {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-
-.section-dashboard--help .form-radio-field:checked ~ .form-radio-button::before {
-  color: #337ab7;
 }
 
 .section-dashboard--help .form-has-error .form-checkbox-button,
@@ -2424,17 +2392,25 @@ button:focus {
   border-bottom: none;
 }
 
-.section-dashboard--upload-art .pricing .btn:hover {
-  color: #090d36;
-  -webkit-transform: none !important;
-          transform: none !important;
+.section-dashboard--upload-art .pricing .btn-hover:hover {
+  -webkit-transform: none;
+          transform: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.section-dashboard--upload-art .pricing .btn:hover::after {
-  -webkit-transform: none !important;
-          transform: none !important;
+.section-dashboard--upload-art .pricing .btn-hover:hover::after {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.section-dashboard--upload-art .pricing .card {
+  border-radius: 0 !important;
+  border-bottom: 1px solid #5f7285;
+}
+
+.section-dashboard--upload-art .pricing .card .bg-blue {
+  background-color: #090d36 !important;
 }
 
 .section-dashboard--upload-art .pricing .card:hover {
@@ -2442,6 +2418,18 @@ button:focus {
           transform: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.section-dashboard--upload-art .pricing input {
+  padding: .5rem;
+  width: 5rem;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.section-dashboard--upload-art .pricing input:visited {
+  border: none;
 }
 
 .section-dashboard--upload-art, .section-dashboard--digitize-art {
@@ -2454,7 +2442,9 @@ button:focus {
   font-weight: bold;
 }
 
-.section-dashboard--upload-art input, .section-dashboard--upload-art textarea, .section-dashboard--digitize-art input, .section-dashboard--digitize-art textarea {
+.section-dashboard--upload-art input,
+.section-dashboard--upload-art textarea, .section-dashboard--digitize-art input,
+.section-dashboard--digitize-art textarea {
   padding: 1.8rem;
   font-weight: 600;
   font-size: 1.6rem;
@@ -2514,27 +2504,27 @@ button:focus {
   box-shadow: none;
 }
 
-.section-dashboard .form-control:focus {
+.section-dashboard--digitize-art .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.section-dashboard p {
+.section-dashboard--digitize-art p {
   color: #FFFFFF;
 }
 
-.section-dashboard hr {
+.section-dashboard--digitize-art hr {
   background-color: #FFFFFF;
   margin: 1.5rem 2.5rem;
 }
 
-.section-dashboard button {
+.section-dashboard--digitize-art button {
   width: 100%;
   font-weight: 600;
   font-size: 1.7rem;
 }
 
-.section-dashboard button span {
+.section-dashboard--digitize-art button span {
   font-size: 1.4rem;
 }
 
