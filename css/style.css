@@ -2380,6 +2380,11 @@ button:focus {
   background-position: center;
 }
 
+.section-dashboard--upload-art .pricing {
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
 .section-dashboard--upload-art .pricing h2 button {
   font-size: 2rem !important;
 }
@@ -2430,6 +2435,16 @@ button:focus {
 
 .section-dashboard--upload-art .pricing input:visited {
   border: none;
+}
+
+.section-dashboard--upload-art .pricing input::-webkit-outer-spin-button,
+.section-dashboard--upload-art .pricing input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.section-dashboard--upload-art .pricing input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .section-dashboard--upload-art, .section-dashboard--digitize-art {
