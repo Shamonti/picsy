@@ -107,32 +107,40 @@
 
               <div class="form-group">
                 <label for="description">Write Description (minimum 50 words)</label>
-                <textarea class="form-control" id="description" rows="2" requires></textarea>
+                <textarea class="form-control" id="description" rows="2" required></textarea>
               </div>
 
               <span class="text-white">Artwork Images</span>
               <div class="input-group my-2">
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="inputGroupFile01"
-                    aria-describedby="inputGroupFileAddon01" multiple />
+                    aria-describedby="inputGroupFileAddon01" multiple required/>
                   <label class="custom-file-label w-75" for="inputGroupFile01">Choose files</label>
                 </div>
               </div>
 
-              <!-- <span class="text-white">Allow Picsy to adjust prices?</span>
-              <div class="custom-control custom-radio custom-control-inline ml-5">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" />
-                <label class="custom-control-label pl-2" for="customRadioInline1">Yes</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" />
-                <label class="custom-control-label pl-2" for="customRadioInline2">No</label>
-              </div> -->
-
               <div class="col-md-12 text-center mt-5">
-                <button type="submit" class="btn btn-solid btn-solid--square btn-pink w-50">
+                <!-- <button type="submit" class="btn btn-solid btn-solid--square btn-pink w-50">
+                  Submit
+                </button> -->
+                <!-- Button trigger modal -->
+                <button type="submit" class="btn btn-solid btn-solid--square btn-pink w-50" data-toggle="modal" data-target="#exampleModal">
                   Submit
                 </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="display-1 text-white font-weight-bold">
+                          SUCCESS
+                        </div>
+                        <h1 class="text-uppercase text-white">Your artwork has been updated</h1>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

@@ -2380,6 +2380,14 @@ button:focus {
   position: relative;
 }
 
+.section-dashboard--upload-art .modal-content {
+  margin-top: 40vh;
+  padding: 5rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 51, 101, 0.7) !important;
+}
+
 .section-dashboard--upload-art .pricing {
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
