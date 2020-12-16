@@ -628,9 +628,9 @@
 
 .app-dot-line.left>.paint-brush {
   position: absolute;
-  right: -18rem;
-  top: 4rem;
-  width: 55rem !important;
+  right: -15rem;
+  top: 5rem;
+  width: 10rem !important;
   transform: rotate(60deg);
 
   &--middle {
@@ -647,6 +647,7 @@
   position: absolute;
   left: -15rem;
   top: 5rem;
+  width: 10rem !important;
   transform: rotate(195deg);
 
   &--middle {
