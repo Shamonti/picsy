@@ -2752,6 +2752,9 @@ button:focus {
   .section-dashboard--help h1 {
     display: block !important;
   }
+  .section-dashboard--upload-art .modal-content h1 {
+    display: block !important;
+  }
 }
 
 .bg-light-purple {
