@@ -35,13 +35,15 @@
     font-size: 9.5rem;
 
     a {
-      color: $color-pink;
+      color: $color-text;
     }
   }
 
-  &_services a:hover {
-    color: $color-pink !important;
-  }
+  &_services {
+    a:hover {
+      color: $color-pink !important;
+    }
+  } 
 
   &_heading-main {
     font-size: 8rem;
@@ -596,9 +598,9 @@
   z-index: 1
 }
 
-.app-dot-line.left>.dot {
-  right: -40px
-}
+// .app-dot-line.left>.dot {
+//   right: -40px
+// }
 
 .app-dot-line>.paint-brush {
   display: none;
@@ -606,18 +608,18 @@
 
 .app-dot-line.left>.paint-brush {
   position: absolute;
-  right: -15rem;
+  right: -18rem;
   top: 4rem;
   width: 55rem !important;
-  transform: rotate(-120deg);
+  transform: rotate(60deg);
 
   &--middle {
-    transform: rotate(-130deg);
+    transform: rotate(60deg);
   }
 
   &--upwards {
     top: 3rem;
-    transform: rotate(-150deg);
+    transform: rotate(60deg);
   }
 }
 
@@ -625,15 +627,15 @@
   position: absolute;
   left: -15rem;
   top: 5rem;
-  transform: rotate(30deg);
+  transform: rotate(195deg);
 
   &--middle {
-    transform: rotate(40deg);
+    transform: rotate(195deg);
   }
 
   &--upwards {
     top: 3rem;
-    transform: rotate(60deg);
+    transform: rotate(195deg);
   }
 }
 
