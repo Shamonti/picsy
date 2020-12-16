@@ -2033,14 +2033,14 @@ button:focus {
 }
 
 .section-dashboard_heading-main {
-  font-size: 8rem;
+  font-size: 10rem;
   color: rgba(255, 255, 255, 0.85);
   position: relative;
 }
 
 .section-dashboard_heading-sub {
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #090d36;
   position: absolute;
   left: 45%;
@@ -2449,7 +2449,8 @@ button:focus {
 
 .section-dashboard--upload-art::after {
   content: "";
-  background: url("../img/upload_art-bg.gif");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/upload_art-bg.gif");
+  background: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/upload_art-bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -46,14 +46,14 @@
   } 
 
   &_heading-main {
-    font-size: 8rem;
+    font-size: 10rem;
     color: rgba($color-white, .85);
     position: relative;
   }
 
   &_heading-sub {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: $color-text;
     position: absolute;
     left: 45%;
@@ -417,7 +417,7 @@
 
   &--upload-art::after {
     content: "";
-    background: url("../img/upload_art-bg.gif");
+    background:  linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/upload_art-bg.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
