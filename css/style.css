@@ -2373,11 +2373,26 @@ button:focus {
   margin: 0;
 }
 
-.section-dashboard--upload-art {
+.section-dashboard canvas {
   width: 100%;
   height: 100%;
-  display: block;
   position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.section-dashboard--upload-art {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.4)), to(rgba(161, 125, 253, 0.4)));
+  background: linear-gradient(rgba(161, 125, 253, 0.4), rgba(161, 125, 253, 0.4));
+  display: block;
+}
+
+.section-dashboard--upload-art #c {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .section-dashboard--upload-art .modal-content {
@@ -2453,22 +2468,6 @@ button:focus {
 
 .section-dashboard--upload-art .pricing input[type=number] {
   -moz-appearance: textfield;
-}
-
-.section-dashboard--upload-art::after {
-  content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(161, 125, 253, 0.5)), to(rgba(161, 125, 253, 0.5))), url("../img/upload_art-bg.gif");
-  background: linear-gradient(rgba(161, 125, 253, 0.5), rgba(161, 125, 253, 0.5)), url("../img/upload_art-bg.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .section-dashboard--upload-art, .section-dashboard--digitize-art {

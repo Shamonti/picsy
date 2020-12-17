@@ -84,6 +84,7 @@
   <main>
     
     <section class="section-dashboard section-dashboard--upload-art pb-5">
+      <canvas id="c"></canvas>
       <div class="container pb-5">
         <div class="row mb-5 pb-3">
 
@@ -1224,342 +1225,342 @@
   </script>
 
   <script src="js/main.js"></script>
+  <script src="js/upload_art-bg.js"></script>
   <script>
 
-
-$('.percentage01').click(function(){
-	let fnum = parseInt($('#first_num01').val())
-	$('.result01').text(fnum / 10)
-})
-function showDiv01() {
-	document.getElementById('result01').style.display = "block";
-	document.getElementById('button01').style.display = "none";
-}
-var input = document.getElementById("first_num01");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button01").click();
-  }
-});
-
-
-$('.percentage02').click(function(){
-	let fnum = parseInt($('#first_num02').val())
-	$('.result02').text(fnum / 10)
-})
-function showDiv02() {
-	document.getElementById('result02').style.display = "block";
-	document.getElementById('button02').style.display = "none";
-}
-var input = document.getElementById("first_num02");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button02").click();
-  }
-});
+    $('.percentage01').click(function(){
+      let fnum = parseInt($('#first_num01').val())
+      $('.result01').text(fnum / 10)
+    })
+    function showDiv01() {
+      document.getElementById('result01').style.display = "block";
+      document.getElementById('button01').style.display = "none";
+    }
+    var input = document.getElementById("first_num01");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button01").click();
+      }
+    });
 
 
-$('.percentage03').click(function(){
-	let fnum = parseInt($('#first_num03').val())
-	$('.result03').text(fnum / 10)
-})
-function showDiv03() {
-	document.getElementById('result03').style.display = "block";
-	document.getElementById('button03').style.display = "none";
-}
-var input = document.getElementById("first_num03");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button03").click();
-  }
-});
+    $('.percentage02').click(function(){
+      let fnum = parseInt($('#first_num02').val())
+      $('.result02').text(fnum / 10)
+    })
+    function showDiv02() {
+      document.getElementById('result02').style.display = "block";
+      document.getElementById('button02').style.display = "none";
+    }
+    var input = document.getElementById("first_num02");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button02").click();
+      }
+    });
 
 
-$('.percentage04').click(function(){
-	let fnum = parseInt($('#first_num04').val())
-	$('.result04').text(fnum / 10)
-})
-function showDiv04() {
-	document.getElementById('result04').style.display = "block";
-	document.getElementById('button04').style.display = "none";
-}
-var input = document.getElementById("first_num04");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button04").click();
-  }
-});
+    $('.percentage03').click(function(){
+      let fnum = parseInt($('#first_num03').val())
+      $('.result03').text(fnum / 10)
+    })
+    function showDiv03() {
+      document.getElementById('result03').style.display = "block";
+      document.getElementById('button03').style.display = "none";
+    }
+    var input = document.getElementById("first_num03");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button03").click();
+      }
+    });
 
 
-$('.percentage05').click(function(){
-	let fnum = parseInt($('#first_num05').val())
-	$('.result05').text(fnum / 10)
-})
-function showDiv05() {
-	document.getElementById('result05').style.display = "block";
-	document.getElementById('button05').style.display = "none";
-}
-var input = document.getElementById("first_num05");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button05").click();
-  }
-});
+    $('.percentage04').click(function(){
+      let fnum = parseInt($('#first_num04').val())
+      $('.result04').text(fnum / 10)
+    })
+    function showDiv04() {
+      document.getElementById('result04').style.display = "block";
+      document.getElementById('button04').style.display = "none";
+    }
+    var input = document.getElementById("first_num04");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button04").click();
+      }
+    });
 
 
-$('.percentage06').click(function(){
-	let fnum = parseInt($('#first_num06').val())
-	$('.result06').text(fnum / 10)
-})
-function showDiv06() {
-	document.getElementById('result06').style.display = "block";
-	document.getElementById('button06').style.display = "none";
-}
-var input = document.getElementById("first_num06");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button06").click();
-  }
-});
+    $('.percentage05').click(function(){
+      let fnum = parseInt($('#first_num05').val())
+      $('.result05').text(fnum / 10)
+    })
+    function showDiv05() {
+      document.getElementById('result05').style.display = "block";
+      document.getElementById('button05').style.display = "none";
+    }
+    var input = document.getElementById("first_num05");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button05").click();
+      }
+    });
 
 
-$('.percentage07').click(function(){
-	let fnum = parseInt($('#first_num07').val())
-	$('.result07').text(fnum / 10)
-})
-function showDiv07() {
-	document.getElementById('result07').style.display = "block";
-	document.getElementById('button07').style.display = "none";
-}
-var input = document.getElementById("first_num07");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button07").click();
-  }
-});
+    $('.percentage06').click(function(){
+      let fnum = parseInt($('#first_num06').val())
+      $('.result06').text(fnum / 10)
+    })
+    function showDiv06() {
+      document.getElementById('result06').style.display = "block";
+      document.getElementById('button06').style.display = "none";
+    }
+    var input = document.getElementById("first_num06");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button06").click();
+      }
+    });
 
 
-$('.percentage08').click(function(){
-	let fnum = parseInt($('#first_num08').val())
-	$('.result08').text(fnum / 10)
-})
-function showDiv08() {
-	document.getElementById('result08').style.display = "block";
-	document.getElementById('button08').style.display = "none";
-}
-var input = document.getElementById("first_num08");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button08").click();
-  }
-});
+    $('.percentage07').click(function(){
+      let fnum = parseInt($('#first_num07').val())
+      $('.result07').text(fnum / 10)
+    })
+    function showDiv07() {
+      document.getElementById('result07').style.display = "block";
+      document.getElementById('button07').style.display = "none";
+    }
+    var input = document.getElementById("first_num07");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button07").click();
+      }
+    });
 
 
-$('.percentage09').click(function(){
-	let fnum = parseInt($('#first_num09').val())
-	$('.result09').text(fnum / 10)
-})
-function showDiv09() {
-	document.getElementById('result09').style.display = "block";
-	document.getElementById('button09').style.display = "none";
-}
-var input = document.getElementById("first_num09");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button09").click();
-  }
-});
+    $('.percentage08').click(function(){
+      let fnum = parseInt($('#first_num08').val())
+      $('.result08').text(fnum / 10)
+    })
+    function showDiv08() {
+      document.getElementById('result08').style.display = "block";
+      document.getElementById('button08').style.display = "none";
+    }
+    var input = document.getElementById("first_num08");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button08").click();
+      }
+    });
 
 
-$('.percentage10').click(function(){
-	let fnum = parseInt($('#first_num10').val())
-	$('.result10').text(fnum / 10)
-})
-function showDiv10() {
-	document.getElementById('result10').style.display = "block";
-	document.getElementById('button10').style.display = "none";
-}
-var input = document.getElementById("first_num10");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button10").click();
-  }
-});
+    $('.percentage09').click(function(){
+      let fnum = parseInt($('#first_num09').val())
+      $('.result09').text(fnum / 10)
+    })
+    function showDiv09() {
+      document.getElementById('result09').style.display = "block";
+      document.getElementById('button09').style.display = "none";
+    }
+    var input = document.getElementById("first_num09");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button09").click();
+      }
+    });
 
 
-$('.percentage11').click(function(){
-	let fnum = parseInt($('#first_num11').val())
-	$('.result11').text(fnum / 10)
-})
-function showDiv11() {
-	document.getElementById('result11').style.display = "block";
-	document.getElementById('button11').style.display = "none";
-}
-var input = document.getElementById("first_num11");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button11").click();
-  }
-});
+    $('.percentage10').click(function(){
+      let fnum = parseInt($('#first_num10').val())
+      $('.result10').text(fnum / 10)
+    })
+    function showDiv10() {
+      document.getElementById('result10').style.display = "block";
+      document.getElementById('button10').style.display = "none";
+    }
+    var input = document.getElementById("first_num10");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button10").click();
+      }
+    });
 
 
-$('.percentage12').click(function(){
-	let fnum = parseInt($('#first_num12').val())
-	$('.result12').text(fnum / 10)
-})
-function showDiv12() {
-	document.getElementById('result12').style.display = "block";
-	document.getElementById('button12').style.display = "none";
-}
-var input = document.getElementById("first_num12");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button12").click();
-  }
-});
-
-$('.percentage13').click(function(){
-	let fnum = parseInt($('#first_num13').val())
-	$('.result13').text(fnum / 10)
-})
-function showDiv13() {
-	document.getElementById('result13').style.display = "block";
-	document.getElementById('button13').style.display = "none";
-}
-var input = document.getElementById("first_num13");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button13").click();
-  }
-});
+    $('.percentage11').click(function(){
+      let fnum = parseInt($('#first_num11').val())
+      $('.result11').text(fnum / 10)
+    })
+    function showDiv11() {
+      document.getElementById('result11').style.display = "block";
+      document.getElementById('button11').style.display = "none";
+    }
+    var input = document.getElementById("first_num11");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button11").click();
+      }
+    });
 
 
-$('.percentage14').click(function(){
-	let fnum = parseInt($('#first_num14').val())
-	$('.result14').text(fnum / 10)
-})
-function showDiv14() {
-	document.getElementById('result14').style.display = "block";
-	document.getElementById('button14').style.display = "none";
-}
-var input = document.getElementById("first_num14");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button14").click();
-  }
-});
+    $('.percentage12').click(function(){
+      let fnum = parseInt($('#first_num12').val())
+      $('.result12').text(fnum / 10)
+    })
+    function showDiv12() {
+      document.getElementById('result12').style.display = "block";
+      document.getElementById('button12').style.display = "none";
+    }
+    var input = document.getElementById("first_num12");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button12").click();
+      }
+    });
+
+    $('.percentage13').click(function(){
+      let fnum = parseInt($('#first_num13').val())
+      $('.result13').text(fnum / 10)
+    })
+    function showDiv13() {
+      document.getElementById('result13').style.display = "block";
+      document.getElementById('button13').style.display = "none";
+    }
+    var input = document.getElementById("first_num13");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button13").click();
+      }
+    });
 
 
-$('.percentage15').click(function(){
-	let fnum = parseInt($('#first_num15').val())
-	$('.result15').text(fnum / 10)
-})
-function showDiv15() {
-	document.getElementById('result15').style.display = "block";
-	document.getElementById('button15').style.display = "none";
-}
-var input = document.getElementById("first_num15");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button15").click();
-  }
-});
+    $('.percentage14').click(function(){
+      let fnum = parseInt($('#first_num14').val())
+      $('.result14').text(fnum / 10)
+    })
+    function showDiv14() {
+      document.getElementById('result14').style.display = "block";
+      document.getElementById('button14').style.display = "none";
+    }
+    var input = document.getElementById("first_num14");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button14").click();
+      }
+    });
 
 
-$('.percentage16').click(function(){
-	let fnum = parseInt($('#first_num16').val())
-	$('.result16').text(fnum / 10)
-})
-function showDiv16() {
-	document.getElementById('result16').style.display = "block";
-	document.getElementById('button16').style.display = "none";
-}
-var input = document.getElementById("first_num16");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button16").click();
-  }
-});
+    $('.percentage15').click(function(){
+      let fnum = parseInt($('#first_num15').val())
+      $('.result15').text(fnum / 10)
+    })
+    function showDiv15() {
+      document.getElementById('result15').style.display = "block";
+      document.getElementById('button15').style.display = "none";
+    }
+    var input = document.getElementById("first_num15");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button15").click();
+      }
+    });
 
-$('.percentage17').click(function(){
-	let fnum = parseInt($('#first_num17').val())
-	$('.result17').text(fnum / 10)
-})
-function showDiv17() {
-	document.getElementById('result17').style.display = "block";
-	document.getElementById('button17').style.display = "none";
-}
-var input = document.getElementById("first_num17");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button17").click();
-  }
-});
 
-$('.percentage18').click(function(){
-	let fnum = parseInt($('#first_num18').val())
-	$('.result18').text(fnum / 10)
-})
-function showDiv18() {
-	document.getElementById('result18').style.display = "block";
-	document.getElementById('button18').style.display = "none";
-}
-var input = document.getElementById("first_num18");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button18").click();
-  }
-});
+    $('.percentage16').click(function(){
+      let fnum = parseInt($('#first_num16').val())
+      $('.result16').text(fnum / 10)
+    })
+    function showDiv16() {
+      document.getElementById('result16').style.display = "block";
+      document.getElementById('button16').style.display = "none";
+    }
+    var input = document.getElementById("first_num16");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button16").click();
+      }
+    });
 
-$('.percentage19').click(function(){
-	let fnum = parseInt($('#first_num19').val())
-	$('.result19').text(fnum / 10)
-})
-function showDiv19() {
-	document.getElementById('result19').style.display = "block";
-	document.getElementById('button19').style.display = "none";
-}
-var input = document.getElementById("first_num19");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button19").click();
-  }
-});
+    $('.percentage17').click(function(){
+      let fnum = parseInt($('#first_num17').val())
+      $('.result17').text(fnum / 10)
+    })
+    function showDiv17() {
+      document.getElementById('result17').style.display = "block";
+      document.getElementById('button17').style.display = "none";
+    }
+    var input = document.getElementById("first_num17");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button17").click();
+      }
+    });
 
-$('.percentage20').click(function(){
-	let fnum = parseInt($('#first_num20').val())
-	$('.result20').text(fnum / 10)
-})
-function showDiv20() {
-	document.getElementById('result20').style.display = "block";
-	document.getElementById('button20').style.display = "none";
-}
-var input = document.getElementById("first_num20");
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("button20").click();
-  }
-});
+    $('.percentage18').click(function(){
+      let fnum = parseInt($('#first_num18').val())
+      $('.result18').text(fnum / 10)
+    })
+    function showDiv18() {
+      document.getElementById('result18').style.display = "block";
+      document.getElementById('button18').style.display = "none";
+    }
+    var input = document.getElementById("first_num18");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button18").click();
+      }
+    });
+
+    $('.percentage19').click(function(){
+      let fnum = parseInt($('#first_num19').val())
+      $('.result19').text(fnum / 10)
+    })
+    function showDiv19() {
+      document.getElementById('result19').style.display = "block";
+      document.getElementById('button19').style.display = "none";
+    }
+    var input = document.getElementById("first_num19");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button19").click();
+      }
+    });
+
+    $('.percentage20').click(function(){
+      let fnum = parseInt($('#first_num20').val())
+      $('.result20').text(fnum / 10)
+    })
+    function showDiv20() {
+      document.getElementById('result20').style.display = "block";
+      document.getElementById('button20').style.display = "none";
+    }
+    var input = document.getElementById("first_num20");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("button20").click();
+      }
+    });
     
   </script>
 </body>
