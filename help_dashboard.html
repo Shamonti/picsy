@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- BOOTSTRAP CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <!-- SLIDER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Picsy</title>
+</head>
+
+<body>
+  <header class="header header-dashboard">
+    <div class="bg-default--blue">
+      <nav id="nav--1" class="navbar navbar-expand-lg fixed-top">
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold">
+          <img src="img/logo.png" class="logo" alt="logo" />
+        </a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active scroll">
+              <a href="seller-dashboard.html" class="nav-link text-uppercase font-weight-bold text-white">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Hello user@gmail.com!</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fas fa-sign-out-alt pr-2"></i>
+                Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container u-padding-top section-dashboard-top">
+        <div class="row pt-5 mt-4">
+          <div class="col-md-5 text-lrft border-right mb-5 pl-5 ml-4">
+            <h2 class="text-white dashboard-title">Artist Dashboard</h2>
+          </div>
+          <div class="col-md-6 text-white pl-5 pb-5">
+            <h2 class="text-uppercase pl-5">You are here:</h2>
+            <br />
+            <p class="text-white pl-5">
+              <a href="seller-dashboard.html"> Dashboard </a><i class="fas fa-angle-double-right px-3"></i>
+              <a href="#"> Need Help?</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-dashboard section-dashboard--help u-section-padding pt-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center py-5 mt-md-3">
+            <h1 class="text-blue font-weight-bold display-4">Frequently Asked Questions (FAQ)</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 faq">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-blue" type="button" data-toggle="collapse"
+                      data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Artist Royalties: How do you get paid? <i class="fas fa-chevron-down float-right text-pink"></i>
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    We are working hard to design a cash out feature which will allow you to cash out manually which we
+                    hope to have up and running in the new year in the mean time we will gather your deposit banking
+                    details you would like your Royalties you have earned from sales sent over to if you have any
+                    questions or would like to update your details you can email Royalties@picsy.co.uk and we will be
+                    back in contact in 24 hours or less to update your deposit details or help you with any other
+                    concerns.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-blue collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Earning for Artists
+                      <i class="fas fa-chevron-down float-right text-pink"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Here at Picsy we are a young and lively company looking to bring new art to the public and offer
+                    amazing canvas's based off your art. We allow you to set the ideal RRP / sale price the end client
+                    will pay and give you 10% Royalties payment for each canvas sold on the total value amount / sale
+                    price, We have set this Percentage based off feed back from other Artist of what would be a fair
+                    amount and in turn allow you to grow your art be it photography or Graphics art work and show the
+                    world your love and passion which we then market, print ship to the end customer.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-blue collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How does the Copy Rights work?
+                      <i class="fas fa-chevron-down float-right text-pink"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Here at Picsy we bring new Artist onboard each day and get asked this question all the time how does
+                    the copy rights work for your images / content you upload. This is where we proud our self on giving
+                    you full control of the content you upload we don't own your images you do! and in your dashboard
+                    you have full control to remove your uploaded listings any time once this is done we can no longer
+                    sell your image on our websites or market it. Once you remove your image it can take up to 24 hours
+                    to take effect on our website any sales done well the the listings is still active will still be
+                    fulfilled but once your listings is taken off no sale can be done and the image belong to you. Once
+                    the canvas is sold of your image this is at the only point your copy right ends meaning the art work
+                    / canvas now belongs to the person who brought it but they are not allowed to make copys or re-print
+                    it they only have the copy right for that one canvas print. To High light you control use of your
+                    image and here at Picsy we never own your image we only market, print and sell the image to be used
+                    as a canvas and once your listings has been taken off our website through your control panel it can
+                    not be sold. If you have any questions about how we use your images you can email us at
+                    Copyright@picsy.co.uk
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-blue collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      What if I see another user listing my image on the website?
+                      <i class="fas fa-chevron-down float-right text-pink"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Here at Picsy we have a very strict rule we do not allow other users to copy other artist works /
+                    content this is made very clear in our user agreement which all artist sign before they can use the
+                    dashboard and website if you do see an image which you believe belongs to you which you have taken
+                    or made we would like you to email us at Copyright@picsy.co.uk and we will look into this straight
+                    away. To prove you own the image its always helpful if you can give more information such as where
+                    you took the image a link in the email of the listing in question as well as do you have the RAW
+                    file for it and any other evidence the image does in fact belong to you if we find the Artist in
+                    question has used your image and its the same image as yours their account will be closed straight
+                    away as we want to build a family of artist which care about sharing there work and helping them
+                    fund more of there amazing images.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-blue collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      How does the Control panel / Artist Dashboard work?
+                      <i class="fas fa-chevron-down float-right text-pink"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    The Artist Dash board gives you the Artist control of adding and updating listings you publish. <br>
+                    &emsp; <b>1 UPLOAD ART</b> is where you can upload your listing add tile along with Description and price to go along with it. <br>
+                    &emsp; <b>2 DIGITIZE ART</b> is where you can also publish your art work but if you need help getting your image ready to upload you can use that interface for added help. <br>
+                    &emsp; <b> 3 YOUR LISTING /STATUS </b>This is the
+                    page where you can keep track of all your listings this page will show which images you have listed
+                    with what description in this menu you can. also download your listing info and order personal prints for your self or your peroneal customers at trade price.  <br>
+                    &emsp; <b>4 EDIT LISTINGS </b>This is your control
+                    panel for changing listings you have already made you can also follow the link to see your actives
+                    listing on our website in real time through this page and check to make sure your listing is just
+                    how you want to look.  <br> 
+                    &emsp; <b>5 SALES REPORT </b>This page is all about your sales and will show information
+                    such as how much you have earned and how many views each listings has had such as clicks and views
+                    and also give you a helping hand in seeing which images have sold well as a canvas this is also your
+                    cash out window we will be activing new tools in the coming months packed full of fun information so
+                    keep watching.  <br>
+                    &emsp; <b>6 DELETE ART </b>This section is for removing your listings once removed they will be
+                    taken off our websites this can take up to 48 hours but normally happen straight away once a listing
+                    have been taken off if you wish to re-list the listing through the upload panel.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-5 pt-5">
+            <form class="form-card">
+              <fieldset class="form-fieldset">
+                <h2 class="text-blue font-weight-bold pb-5">Leave a Reply</h2>
+
+                <div class="form-element form-input">
+                  <textarea class="form-element-field" name="comment" cols="40" rows="5"></textarea>
+                  <div class="form-element-bar"></div>
+                  <label class="form-element-label" for="name">Comment</label>
+                </div>
+
+                <div class="form-element form-input">
+                  <input id="name" class="form-element-field" placeholder=" " type="input" required />
+                  <div class="form-element-bar"></div>
+                  <label class="form-element-label" for="name">Name</label>
+                </div>
+
+                <div class="form-element form-input">
+                  <input id="email" class="form-element-field" placeholder=" " type="email" required />
+                  <div class="form-element-bar"></div>
+                  <label class="form-element-label" for="email">Email</label>
+                </div>
+
+                <input class="btn btn-solid btn-solid--square btn-pink float-right" type="submit" value="Post Comment">
+              </fieldset>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- START FOOTER -->
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row bottom-line">
+        <div class="col-md-12 text-center">
+          <span class="copy">&#169; 2020 picsy.co.uk. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Text Animation JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+  <!-- Smooth Scroll JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
