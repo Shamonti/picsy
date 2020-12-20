@@ -35,12 +35,6 @@
     background: linear-gradient(to right, $color-primary-dark, $color-primary-light);
     color: $color-white;
 
-    &--user-form {
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 5%;
-    }
-
     &--dashboard {
       border-radius: 5px;
     }
@@ -64,17 +58,19 @@
   }
 
   &-go-back {
-    color: $color-text;
+    color: $color-white;
     display: inline-block;
-    font-weight: 600;
-    font-size: $default-font-size;
-    border: 1px solid $color-text;
-    border-radius: .25rem;
-    padding: .5rem 1rem;
+    border: 1px solid rgba($color-white, .3);
+    border-radius: 5rem;
+    padding: 1.2rem 1rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
-    &:hover {
-      background-color: $color-text;
+    span {
+      padding: 1.2rem 2.5rem;
+    }
+
+    &:hover span{
+      text-decoration: underline !important;
     }
   }
 
@@ -157,11 +153,6 @@
   height: 1.8rem;
 }
 
-.btn-position {
-  position: absolute;
-  right: -7rem;
-  top: 1rem;
-}
 
 .btn-position--reg {
   position: absolute;
@@ -239,4 +230,45 @@
   &:hover {
     background-color: rgba($color-pink, .85);
   }
+}
+
+.loginBtn {
+  padding: 1.2rem 2.8rem;
+  min-width: 20rem;
+}
+
+.signupBtn {
+  padding: 1.2rem 3.2rem;
+  min-width: 20rem;
+}
+
+.btn-hover {
+  color: $color-white;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }

@@ -1,16 +1,61 @@
 .sidenav {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/contact-comp.jpg');
+  background-image: linear-gradient(to right, #00c6ff, #0F5AE0 50%, #7202bb);
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
   padding-top: 20px;
+
+  canvas {
+    width: 42%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  #nokey {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    }
+
+    .before {
+      background-color: #fff;
+      color: #2775FF;
+      font-size: 1.8rem;
+      // position: absolute;
+      // top: 50%;
+      // right: 7px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 1rem 1.3rem;
+      letter-spacing: -.06em;
+    }
 }
 
-.login-logo--animation {
-  animation: rotate 8s linear infinite;
-  transform-origin: 50% 50%;
+.circle {
+  background-color: #fff;
+  color: #2775FF;
+  font-size: 1.8rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 1rem 1.3rem;
+  letter-spacing: -.06em;
 }
+
+// .login-logo--animation {
+//   animation: rotate 8s linear infinite;
+//   transform-origin: 50% 50%;
+// }
 
 .main {
   padding: 0px 10px;
@@ -24,6 +69,10 @@
   }
 }
 
+.section-title h2{
+  font-size: 2.8rem !important;
+}
+
 .login-form {
   .form-group {
     font-size: 2rem;
@@ -31,12 +80,15 @@
   }
 
   .form-control {
+    border: 2px solid #CDFFFF;
     border-radius: 3rem;
+    padding: 0 2rem 0 3rem;
+    height: 54px;
+    min-width: 33rem;
   }
 
   .form-control:focus {
-    border-color: transparent;
-    box-shadow: 0 0 0 0.2rem rgba($color-primary-dark,.25);
+    box-shadow: 0 5px 1.6rem rgba(165, 165, 165, .5);
   }
 
   input {
@@ -44,15 +96,19 @@
     font-size: $default-font-size;
   }
   label {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
+    font-weight: bold;
+    color: $color-black;
   }
-  
+  .form-check-label {
+    font-weight: 300;
+  }
+
   a {
-    color: $color-primary-dark;
     text-decoration: underline !important;
-  
+
     &:hover {
-      color: rgba($color-primary-dark, .85)  ;
+      text-decoration: none !important;
     }
   }
 }
@@ -87,11 +143,11 @@
 
 @media screen and (min-width: 768px){
   .main{
-      margin-left: 48%;      
+      margin-left: 42%;      
   }
 
   .sidenav {
-      width: 48%;
+      width: 42%;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -99,7 +155,7 @@
   }
 
   .login-form{
-      margin-top: 38%;
+      margin-top: 25%;
       font-size: $default-font-size;
   }
 }
@@ -117,17 +173,38 @@
   .main .bottom-line {
     margin-top: 10%;
   }
-
-  .btn-position {
-    position: absolute;
-    right: 2rem !important;
-    top: 1rem !important;
+  
+  .sidenav {
+    display: none;
   }
+  .main{
+    margin-left: 0%;      
+  }
+  .login-form {
+    margin-top: 10%;
+  }
+  // .loginBtn {
+  //   min-width: 5rem;
+  // }
+  
+  // .signupBtn {
+  //   min-width: 5rem;
+  // }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px){
   /*Tablets*/
   .main .bottom-line {
+      margin-top: 15%;
+    }
+
+    .sidenav {
+      display: none;
+    }
+    .main{
+      margin-left: 0%;      
+    }
+    .login-form {
       margin-top: 15%;
     }
 }

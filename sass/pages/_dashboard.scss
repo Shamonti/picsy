@@ -61,7 +61,7 @@
   }
 
   &--delete-art {
-    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/delete-art_bg.jpg");
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)), url("../img/delete-art_bg.png");
     background-size: cover;
     background-position: center;
   }
@@ -539,8 +539,8 @@
     background-position: center;
     background-attachment: fixed;
 
-    table {
-      text-align: center;
+    .mdl-data-table th, td {
+      font-size: $default-font-size;
     }
   }
 

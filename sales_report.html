@@ -109,429 +109,443 @@
         <!-- START TABLE -->
         <div class="row pt-5">
           <div class="col-md-12">
-            <table
-            class="table table-default table-hover table-borderless"
-          >
-            <thead>
-              <tr>
-                <th style="width: 4%" scope="col"></th>
-                <th style="width: 20%" scope="col">Image Title</th>
-                <th scope="col">Image</th>
-                <th style="width: 26%;" scope="col">Number of Views</th>
-                <th style="width: 26%;" scope="col">Royalties Earned</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Image Title 01</td>
-                <td>
-                  <!-- Image trigger modal -->
-                  <img
-                    src="img/card_img_1.jpg"
-                    class="img-fluid w-50"
-                    alt="flowers"
-                    data-toggle="modal"
-                    data-target="#img-01"
-                  />
+            <table class="mdl-data-table mdl-js-data-table table-default table-hover mx-auto">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric"></th>
+                  <th class="mdl-data-table__cell--non-numeric">Image Title</th>
+                  <th class="mdl-data-table__cell--non-numeric">Image</th>
+                  <th class="mdl-data-table__cell--non-numeric">Number of Views</th>
+                  <th class="mdl-data-table__cell--non-numeric">Royalties Earned</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">01.</td>
+                  <td class="mdl-data-table__cell--non-numeric">Image Title 01</td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <!-- Image trigger modal -->
+                  <img style="width: 150px;"
+                  src="img/card_img_1.jpg"
+                  class="img-fluid"
+                  alt="flowers"
+                  data-toggle="modal"
+                  data-target="#img-01"
+                />
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="img-01"
-                    tabindex="-1"
-                    aria-labelledby="imgLabel-01"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title text-default font-weight-bold"
-                            id="img-01"
-                          >
-                            Article title
-                          </h5>
-                          <button
-                            style="width: 4.5rem"
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <!-- <span aria-hidden="true">&times;</span> -->
-                            <i class="fas fa-times-circle"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body text-center p-5">
-                          <img
-                            src="img/card_img_1.jpg"
-                            class="img-fluid w-90"
-                            alt="flowers"
-                            data-toggle="modal"
-                            data-target="#exampleModal-01"
-                          />
-                        </div>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="img-01"
+                  tabindex="-1"
+                  aria-labelledby="imgLabel-01"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-default font-weight-bold"
+                          id="img-01"
+                        >
+                          Article title
+                        </h5>
+                        <button
+                          style="width: 4.5rem"
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                          <i class="fas fa-times-circle"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center p-5">
+                        <img
+                          src="img/card_img_1.jpg"
+                          class="img-fluid w-90"
+                          alt="flowers"
+                          data-toggle="modal"
+                          data-target="#exampleModal-01"
+                        />
                       </div>
                     </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--blue px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--pink px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Image Title 02</td>
-                <td>
-                  <!-- Image trigger modal -->
-                  <img
-                    src="img/card_img_1.jpg"
-                    class="img-fluid w-50"
-                    alt="flowers"
-                    data-toggle="modal"
-                    data-target="#exampleModal-02"
-                  />
+                </div>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-2">
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal-02"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel-02"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title text-default font-weight-bold"
-                            id="exampleModalLabel-02"
-                          >
-                            Article title
-                          </h5>
-                          <button
-                            style="width: 4.5rem"
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <!-- <span aria-hidden="true">&times;</span> -->
-                            <i class="fas fa-times-circle"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body text-center p-5">
-                          <img
-                            src="img/card_img_1.jpg"
-                            class="img-fluid w-90"
-                            alt="flowers"
-                            data-toggle="modal"
-                            data-target="#exampleModal-02"
-                          />
-                        </div>
+                      <div class="chart chart--blue px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
+                      </div>
+                  </div>
+                  </td>
+                  
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-4">
+
+                      <div class="chart chart--pink px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
+                      </div>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">02.</td>
+                  <td class="mdl-data-table__cell--non-numeric">Image Title 02</td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <!-- Image trigger modal -->
+                  <img style="width: 150px;"
+                  src="img/card_img_1.jpg"
+                  class="img-fluid"
+                  alt="flowers"
+                  data-toggle="modal"
+                  data-target="#img-01"
+                />
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="img-01"
+                  tabindex="-1"
+                  aria-labelledby="imgLabel-01"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-default font-weight-bold"
+                          id="img-01"
+                        >
+                          Article title
+                        </h5>
+                        <button
+                          style="width: 4.5rem"
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                          <i class="fas fa-times-circle"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center p-5">
+                        <img
+                          src="img/card_img_1.jpg"
+                          class="img-fluid w-90"
+                          alt="flowers"
+                          data-toggle="modal"
+                          data-target="#exampleModal-01"
+                        />
                       </div>
                     </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--blue px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--pink px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Image Title 03</td>
-                <td>
-                  <!-- Image trigger modal -->
-                  <img
-                    src="img/card_img_1.jpg"
-                    class="img-fluid w-50"
-                    alt="flowers"
-                    data-toggle="modal"
-                    data-target="#exampleModal-03"
-                  />
+                </div>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-2">
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal-03"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel-03"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title text-default font-weight-bold"
-                            id="exampleModalLabel-03"
-                          >
-                            Article title
-                          </h5>
-                          <button
-                            style="width: 4.5rem"
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <!-- <span aria-hidden="true">&times;</span> -->
-                            <i class="fas fa-times-circle"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body text-center p-5">
-                          <img
-                            src="img/card_img_1.jpg"
-                            class="img-fluid w-90"
-                            alt="flowers"
-                            data-toggle="modal"
-                            data-target="#exampleModal-03"
-                          />
-                        </div>
+                      <div class="chart chart--blue px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
+                      </div>
+                  </div>
+                  </td>
+                  
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-4">
+
+                      <div class="chart chart--pink px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
+                      </div>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">03.</td>
+                  <td class="mdl-data-table__cell--non-numeric">Image Title 03</td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <!-- Image trigger modal -->
+                  <img style="width: 150px;"
+                  src="img/card_img_1.jpg"
+                  class="img-fluid"
+                  alt="flowers"
+                  data-toggle="modal"
+                  data-target="#img-01"
+                />
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="img-01"
+                  tabindex="-1"
+                  aria-labelledby="imgLabel-01"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-default font-weight-bold"
+                          id="img-01"
+                        >
+                          Article title
+                        </h5>
+                        <button
+                          style="width: 4.5rem"
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                          <i class="fas fa-times-circle"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center p-5">
+                        <img
+                          src="img/card_img_1.jpg"
+                          class="img-fluid w-90"
+                          alt="flowers"
+                          data-toggle="modal"
+                          data-target="#exampleModal-01"
+                        />
                       </div>
                     </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--blue px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--pink px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Image Title 04</td>
-                <td>
-                  <!-- Image trigger modal -->
-                  <img
-                    src="img/card_img_1.jpg"
-                    class="img-fluid w-50"
-                    alt="flowers"
-                    data-toggle="modal"
-                    data-target="#exampleModal-04"
-                  />
+                </div>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-2">
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal-04"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel-04"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title text-default font-weight-bold"
-                            id="exampleModalLabel-04"
-                          >
-                            Article title
-                          </h5>
-                          <button
-                            style="width: 4.5rem"
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <!-- <span aria-hidden="true">&times;</span> -->
-                            <i class="fas fa-times-circle"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body text-center p-5">
-                          <img
-                            src="img/card_img_1.jpg"
-                            class="img-fluid w-90"
-                            alt="flowers"
-                            data-toggle="modal"
-                            data-target="#exampleModal-04"
-                          />
-                        </div>
+                      <div class="chart chart--blue px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
+                      </div>
+                  </div>
+                  </td>
+                  
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-4">
+
+                      <div class="chart chart--pink px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
+                      </div>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">04.</td>
+                  <td class="mdl-data-table__cell--non-numeric">Image Title 04</td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <!-- Image trigger modal -->
+                  <img style="width: 150px;"
+                  src="img/card_img_1.jpg"
+                  class="img-fluid"
+                  alt="flowers"
+                  data-toggle="modal"
+                  data-target="#img-01"
+                />
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="img-01"
+                  tabindex="-1"
+                  aria-labelledby="imgLabel-01"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-default font-weight-bold"
+                          id="img-01"
+                        >
+                          Article title
+                        </h5>
+                        <button
+                          style="width: 4.5rem"
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                          <i class="fas fa-times-circle"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center p-5">
+                        <img
+                          src="img/card_img_1.jpg"
+                          class="img-fluid w-90"
+                          alt="flowers"
+                          data-toggle="modal"
+                          data-target="#exampleModal-01"
+                        />
                       </div>
                     </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--blue px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--pink px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Image Title 05</td>
-                <td>
-                  <!-- Image trigger modal -->
-                  <img
-                    src="img/card_img_1.jpg"
-                    class="img-fluid w-50"
-                    alt="flowers"
-                    data-toggle="modal"
-                    data-target="#exampleModal-05"
-                  />
+                </div>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-2">
 
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal-05"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel-05"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5
-                            class="modal-title text-default font-weight-bold"
-                            id="exampleModalLabel-05"
-                          >
-                            Article title
-                          </h5>
-                          <button
-                            style="width: 4.5rem"
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <!-- <span aria-hidden="true">&times;</span> -->
-                            <i class="fas fa-times-circle"></i>
-                          </button>
-                        </div>
-                        <div class="modal-body text-center p-5">
-                          <img
-                            src="img/card_img_1.jpg"
-                            class="img-fluid w-90"
-                            alt="flowers"
-                            data-toggle="modal"
-                            data-target="#exampleModal-05"
-                          />
-                        </div>
+                      <div class="chart chart--blue px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
+                      </div>
+                  </div>
+                  </td>
+                  
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-4">
+
+                      <div class="chart chart--pink px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
+                      </div>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">05.</td>
+                  <td class="mdl-data-table__cell--non-numeric">Image Title 05</td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <!-- Image trigger modal -->
+                  <img style="width: 150px;"
+                  src="img/card_img_1.jpg"
+                  class="img-fluid"
+                  alt="flowers"
+                  data-toggle="modal"
+                  data-target="#img-01"
+                />
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="img-01"
+                  tabindex="-1"
+                  aria-labelledby="imgLabel-01"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title text-default font-weight-bold"
+                          id="img-01"
+                        >
+                          Article title
+                        </h5>
+                        <button
+                          style="width: 4.5rem"
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <!-- <span aria-hidden="true">&times;</span> -->
+                          <i class="fas fa-times-circle"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body text-center p-5">
+                        <img
+                          src="img/card_img_1.jpg"
+                          class="img-fluid w-90"
+                          alt="flowers"
+                          data-toggle="modal"
+                          data-target="#exampleModal-01"
+                        />
                       </div>
                     </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--blue px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
-                    </div>
+                </div>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-2">
+
+                      <div class="chart chart--blue px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$6,059</h3>
+                      </div>
                   </div>
-                </td>
-                <td>
-                  <div class="row pt-4">
-                    <div class="chart chart--pink px-0">
-                      <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" class="col-sm-5 col-md-12 col-lg-11">
-                        <use xlink:href="#piechart" mask="url(#piemask)" />
-                        <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-                      </svg>
-                    </div>
-                    <div class="col-md-5 px-0 pt-4">
-                      <h3 class="my-5 float-left font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
-                    </div>
+                  </td>
+                  
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <div class="row px-4">
+
+                      <div class="chart chart--pink px-0 col-sm-5 col-md-8 col-lg-8">
+                        <svg fill="currentColor" width="120px" height="120px" viewBox="0 0 1 1" >
+                          <use xlink:href="#piechart" mask="url(#piemask)" />
+                          <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#FFF" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
+                        </svg>
+                      </div>
+                      <div class="col-md-4 px-0 pt-4">
+                        <h3 class="my-5 font-weight-bold pl-md-4 pl-lg-0 chart-title">$4,834</h3>
+                      </div>
                   </div>
-                </td>
-              </tr>
-            </tbody>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
-        </div> 
+        </div>
         <!-- END TABLE -->
+        
         
         <!-- START GRAPH -->
         <div class="row text-center">
